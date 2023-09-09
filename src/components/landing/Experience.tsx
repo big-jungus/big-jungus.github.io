@@ -4,7 +4,7 @@ function Experience () {
     return (
         <div className="experienceBackground">
             <div className="anchor" id="experience"/>
-            <h1 className="sectionHeading">EXPERIENC</h1>
+            <h1 className="sectionHeading">EXPERIENCE</h1>
             <div className="standardTopBorder"/>
 
             <div className="experienceHeader">
