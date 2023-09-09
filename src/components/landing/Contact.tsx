@@ -1,8 +1,8 @@
 import "./css/stylesHome.css"
 
-import email from "./images/icons/email.svg";
-import linkedin from "./images/icons/linkedin.svg";
-import resume from "./images/icons/resume.svg";
+import email from "/images/icons/email.svg";
+import linkedin from "/images/icons/linkedin.svg";
+import resume from "/images/icons/resume.svg";
 
 function Contact(){
     return(

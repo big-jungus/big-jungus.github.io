@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 import "./css/stylesHome.css"
 
-import LR from "./images/projectCards/LR_card.jpg";
-import KOR from "./images/projectCards/KoR_card.png";
-import ZD from "./images/projectCards/ZD_card.png";
+import LR from "/images/projectCards/LR_card.jpg";
+import KOR from "/images/projectCards/KoR_card.png";
+import ZD from "/images/projectCards/ZD_card.png";
 
 type Props = {
     updateIndex: (index: number) => void;

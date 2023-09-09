@@ -6,7 +6,7 @@
     align-items: center;
     row-gap: 5vh;
 
-    background-image: url(src/components/landing/images/gridbackground.jpg);
+    background-image: url(public/images/gridbackground.jpg);
     background-size: 10%;
     background-attachment: fixed;
 }

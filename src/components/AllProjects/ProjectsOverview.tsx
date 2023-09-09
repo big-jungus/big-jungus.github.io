@@ -9,37 +9,37 @@ import {useTimer} from "./useTimer.tsx"
 
 /*I'd like to do this using the require() function, but I guess I would need to do some more setup with client-side JS which I need more time to read up on, which I don't have.
     If you're looking at this, I'm sorry for the sins I have committed*/
-import LR1 from "./projectPictures/LightRunner/LR1.jpg"
-import LR2 from "./projectPictures/LightRunner/LR2.gif"
-import LR3 from "./projectPictures/LightRunner/LR3.png"
+import LR1 from "/projectPictures/LightRunner/LR1.jpg"
+import LR2 from "/projectPictures/LightRunner/LR2.gif"
+import LR3 from "/projectPictures/LightRunner/LR3.png"
 
-import KoR1 from "./projectPictures/KingOfTheRing/KoR1.png";
-import KoR2 from "./projectPictures/KingOfTheRing/KoR2.png";
-import KoR3 from "./projectPictures/KingOfTheRing/KoR3.png";
+import KoR1 from "/projectPictures/KingOfTheRing/KoR1.png";
+import KoR2 from "/projectPictures/KingOfTheRing/KoR2.png";
+import KoR3 from "/projectPictures/KingOfTheRing/KoR3.png";
 
-import ZD1 from "./projectPictures/ZotDev/ZD1.png"
-import ZD2 from "./projectPictures/ZotDev/ZD2.png"
-import ZD3 from "./projectPictures/ZotDev/ZD3.png"
+import ZD1 from "/projectPictures/ZotDev/ZD1.png"
+import ZD2 from "/projectPictures/ZotDev/ZD2.png"
+import ZD3 from "/projectPictures/ZotDev/ZD3.png"
 
-import TLC1 from "./projectPictures/TheLastCrucible/TLC1.png";
-import TLC2 from "./projectPictures/TheLastCrucible/TLC2.gif";
-import TLC3 from "./projectPictures/TheLastCrucible/TLC3.png";
+import TLC1 from "/projectPictures/TheLastCrucible/TLC1.png";
+import TLC2 from "/projectPictures/TheLastCrucible/TLC2.gif";
+import TLC3 from "/projectPictures/TheLastCrucible/TLC3.png";
 
-import MM1 from "./projectPictures/MusicalMadness/MM1.png"
-import MM2 from "./projectPictures/MusicalMadness/MM2.png"
-import MM3 from "./projectPictures/MusicalMadness/MM3.png"
+import MM1 from "/projectPictures/MusicalMadness/MM1.png"
+import MM2 from "/projectPictures/MusicalMadness/MM2.png"
+import MM3 from "/projectPictures/MusicalMadness/MM3.png"
 
-import AT1 from "./projectPictures/AcidTrip/AT1.png";
-import AT2 from "./projectPictures/AcidTrip/AT2.png";
-import AT3 from "./projectPictures/AcidTrip/AT3.png";
+import AT1 from "/projectPictures/AcidTrip/AT1.png";
+import AT2 from "/projectPictures/AcidTrip/AT2.png";
+import AT3 from "/projectPictures/AcidTrip/AT3.png";
 
-import DB1 from "./projectPictures/DeliveryBear/DB1.png";
-import DB2 from "./projectPictures/DeliveryBear/DB2.png";
-import DB3 from "./projectPictures/DeliveryBear/DB3.png";
+import DB1 from "/projectPictures/DeliveryBear/DB1.png";
+import DB2 from "/projectPictures/DeliveryBear/DB2.png";
+import DB3 from "/projectPictures/DeliveryBear/DB3.png";
 
-import TB1 from "./projectPictures/TFTBreakdown/TB1.png"
-import TB2 from "./projectPictures/TFTBreakdown/TB2.png"
-import TB3 from "./projectPictures/TFTBreakdown/TB3.png"
+import TB1 from "/projectPictures/TFTBreakdown/TB1.png"
+import TB2 from "/projectPictures/TFTBreakdown/TB2.png"
+import TB3 from "/projectPictures/TFTBreakdown/TB3.png"
 
 type Props = {
     index: number;
