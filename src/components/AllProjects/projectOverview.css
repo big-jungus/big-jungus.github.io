@@ -1,0 +1,338 @@
+.pageContainer {
+    background-image: url(src/components/landing/images/gridbackground.jpg);
+    background-size: 10%;
+}
+
+.overviewTopBorder { 
+    height: 1.75vh;
+    width: 0%;
+
+    align-self: center;
+
+    border: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+
+    transition: width 0.1s 0.1s, border-width 0.1s;
+}
+
+.projectSelected .overviewTopBorder {
+    width: 100%;
+    border-width: 1px 1px 0 1px;
+}
+
+.overviewBotBorder {
+    height: 1.75vh;
+    width: 0%;
+
+    align-self: center;
+
+    border: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+
+    transition: width 0.1s 0.1s, border-width 0.1s;
+}
+
+.projectSelected .overviewBotBorder {
+    width: 100%;
+    border-width: 0 1px 1px 1px;
+}
+
+.overviewBackground {
+    height: 94vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: black;
+}
+
+.projectsSidebar {
+    order: 0;
+    flex: 1;
+    min-width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: url(src/components/landing/images/gridbackground.jpg);
+    background-size: 10%;
+}
+
+.projectSide {
+    min-height: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw 1vh 1vw;
+
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+
+    background-color: rgba(100, 100, 100, 0.65);
+
+    margin: 0 0 0.5vh 0;
+
+    cursor: pointer;
+}
+
+.projectSide:hover {
+    background-color: rgb(114, 114, 114);
+}
+
+.projectSide:hover .overviewTopBorder{
+    width: 100%;
+    border-width: 1px 1px 0 1px;
+
+    transition: width 0.3s, border-width 1s 0.3s;
+}
+
+.projectSide:hover .overviewBotBorder {
+    width: 100%;
+
+    border-width: 0 1px 1px 1px;
+
+    transition: width 0.3s, border-width 1s 0.3s;
+}
+
+
+.projectSide h4 {
+    flex: 1;
+
+    color: white;
+
+    align-self: center;
+    transform: translateY(10%);
+
+    padding: 0 1vw 0 1vw;
+    
+    font-size: 25px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.projectSelected {
+    min-height: 10vh;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw 1vh 1vw;
+
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+
+    background-color: rgba(170, 170, 170, 0.65);
+
+    margin: 0 0 0.5vh 0;
+
+    cursor: default;
+}
+
+.projectSelected h4{
+    flex: 1;
+
+    color: white;
+
+    align-self: center;
+    transform: translateY(10%);
+
+    padding: 0 1vw 0 1vw;
+    
+    font-size: 25px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.spacer {
+    flex: 1;
+
+    height: 1vh;
+    width: 1vh;
+}
+
+
+
+
+.projectsMain {
+    order: 1;
+    flex: 4;
+
+    background-image: url(src/components/landing/images/gridbackground.jpg);
+    background-size: 10%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    align-self: center;
+    
+
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    
+    background-color: rgba(100, 100, 100, 0.65);
+
+    padding: 1vh 1vw 1vh 1vw;
+    margin: 0 1vw 0 1vw;
+
+    transform: scaleY(1);
+
+    transition: transform 0.4s 0.2s;
+}
+
+.projectAnim {
+    transform: scaleY(0);
+    transition: transform 0.4s 0.8s;
+}
+
+.projectTitle {
+    align-self: center;
+    color: white;
+    padding-bottom: 1vh;
+    font-weight: 700;
+    scale: 1;
+    opacity: 1;
+    
+    transition: scale 0.2s 0.8s, opacity 0.2s 0.8s;
+}
+
+.projectAnim .projectTitle {
+    scale: 0.8;
+    opacity: 0;
+
+    transition: scale 0.2s 0.2s, opacity 0.2s 0.2s;
+}
+
+.overviewBar {
+    align-self: center;
+
+    background-color: white;
+    height: 1px;
+    width: 80%;
+    margin: 1vh 0 1vh 0;
+}
+
+.project .overviewTopBorder { 
+    height: 1.75vh;
+    width: 100%;
+
+    align-self: center;
+
+    border: solid;
+    border-color: white;
+    border-width: 1px 1px 0 1px;
+
+    transition: width 0.3s 1.2s, border-width 0.1s 1.5s;
+}
+
+.projectAnim .overviewTopBorder {
+    width: 0%;
+
+    border-width: 1px 0 0 0;
+    transition: width 0.3s 0.5s, border-width 0.1s 0.4s;
+}
+
+.project .overviewBotBorder {
+    height: 1.75vh;
+    width: 100%;
+
+    align-self: center;
+
+    border: solid;
+    border-color: white;
+    border-width: 0 1px 1px 1px;
+    margin-bottom: 1vh;
+
+    transition: width 0.3s 1.2s, border-width 0.1s 1.5s;
+}
+
+.projectAnim .overviewBotBorder {
+    width: 0%;
+
+    border-width: 0 0 1px 0;
+    transition: width 0.3s 0.5s, border-width 0.1s 0.4s;
+}
+
+.projectBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: column;
+}
+
+.images {
+    
+    max-height: 225px;
+    max-width: 400px;
+    margin: 1vh 1vw 1vh 1vw;
+    
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+
+    scale: 1;
+    opacity: 1;
+
+    transition: scale 0.2s 0.8s, opacity 0.2s 0.8s;
+}
+
+.projectAnim .images {
+    scale: 0.6;
+    opacity: 0;
+
+    transition: scale 0.2s, opacity, 0.2s;
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+
+    scale: 1;
+    opacity: 1;
+
+    transition: scale 0.3s 0.9s, opacity 0.3s 0.9s;
+}
+
+.projectAnim .content {
+    scale: 0.6;
+    opacity: 0;
+
+    transition: scale 0.3s 0.1s, opacity 0.3s 0.1s;
+}
+
+.projectLink {
+    max-width: fit-content;
+    margin-left: 1vw;
+    border-radius: 0;
+}
+
+.content h4 {
+    padding: 1vh 1vw 0 1vw;
+    color: white;
+}
+
+.content p {
+    white-space: pre-line;
+    font-size: large;
+    padding: 1vh 1vw 1vh 1vh;
+    margin-left: 0.5vw;
+    color: white;
+}
