@@ -1,4 +1,4 @@
-import me from './images/me.png';
+import me from '/images/me.png';
 import "./css/stylesHome.css"
 
 
