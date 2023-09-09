@@ -1,12 +1,12 @@
 import CountUp from "react-countup";
-import ReactRouterDom from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "./css/animation.css"
 import "./css/stylesHome.css"
 import "./css/stylesSplash.css"
 
 const Splash = () => {
-    const navigate = ReactRouterDom.useNavigate();
+    const navigate = useNavigate();
 
     return(
         <div className="splashBase" onAnimationEnd={() => navigate("/home")}>
