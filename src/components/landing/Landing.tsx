@@ -29,7 +29,7 @@ const Landing = ({
     return (
         <>  
             <div className="page-container">
-                <NavBar index={index} updateIndex={updateIndex}/>
+                <NavBar />
                 <About />
                 <ProjectsRecent updateIndex={updateIndex}/>
                 <Experience />

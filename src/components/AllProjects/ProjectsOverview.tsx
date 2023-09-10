@@ -156,7 +156,7 @@ const ProjectsOverview = ({
 
     return(
         <div className="pageContainer">
-        <NavBar index={index} updateIndex={updateIndex}/>
+        <NavBar />
             <div className="overviewBackground">
                 <ProjectSidebar index={index} updateIndex={updateIndex} projectsList={projectsList} clickAnim={click}/>
                 
