@@ -21,7 +21,7 @@ function App() {
                 />
                 <Route 
                     path="/home"
-                    element={ <Landing updateIndex={updateIndex} index={activeIndex}/> }
+                    element={ <Landing updateIndex={updateIndex} /> }
                 />
                 <Route 
                     path="/projects"

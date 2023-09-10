@@ -8,12 +8,10 @@ import Contact from "./Contact";
 import "./css/stylesHome.css"
 
 type Props = {
-    index: number;
     updateIndex: (index: number) => void;
 }
 
 const Landing = ({
-        index,
         updateIndex
     }: Props) => {
 
