@@ -1,5 +1,5 @@
 .pageContainer {
-    background-image: url(src/components/landing/images/gridbackground.jpg);
+    background-image: url(/images/gridbackground.jpg);
     background-size: 10%;
 }
 
@@ -58,7 +58,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    background-image: url(src/components/landing/images/gridbackground.jpg);
+    background-image: url(/images/gridbackground.jpg);
     background-size: 10%;
 }
 
@@ -164,7 +164,7 @@
     order: 1;
     flex: 4;
 
-    background-image: url(src/components/landing/images/gridbackground.jpg);
+    background-image: url(/images/gridbackground.jpg);
     background-size: 10%;
 }
 
