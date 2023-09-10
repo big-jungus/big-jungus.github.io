@@ -9,7 +9,7 @@ const Splash = () => {
     const navigate = useNavigate();
 
     return(
-        <div className="splashBase" onAnimationEnd={() => navigate("/portfolio/home")}>
+        <div className="splashBase" onAnimationEnd={() => navigate("/home")}>
             <h1 className="h1Text">MATTHEW JUNG</h1>
             <div className="centerLine" />
             <h2 className="h2Text">GAME DEVELOPER</h2>

@@ -16,15 +16,15 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route 
-                    path="/portfolio/"
+                    path="/"
                     element={ <Splash/> }
                 />
                 <Route 
-                    path="/portfolio/home"
+                    path="/home"
                     element={ <Landing updateIndex={updateIndex} index={activeIndex}/> }
                 />
                 <Route 
-                    path="/portfolio/projects"
+                    path="/projects"
                     element={ <ProjectsOverview
                                     index={activeIndex}
                                     updateIndex={updateIndex}
