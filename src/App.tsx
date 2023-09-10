@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import {useState} from "react";
 
 import Splash from './components/landing/Splash';
@@ -13,7 +13,7 @@ function App() {
     }
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route 
                     path="/"
@@ -31,7 +31,7 @@ function App() {
                     /> }
                 />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 export default App;
