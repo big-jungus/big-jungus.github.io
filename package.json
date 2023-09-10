@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://big-jungus.github.io/portfolio",
+  "homepage": "https://big-jungus.github.io/portfolio/#",
   "type": "module",
   "scripts": {
     "dev": "vite",
