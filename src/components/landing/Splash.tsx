@@ -7,6 +7,7 @@ import "./css/stylesSplash.css"
 
 const Splash = () => {
     const navigate = useNavigate();
+
     return(
         <div className="splashBase" onAnimationEnd={() => navigate("/home")}>
             <h1 className="h1Text">MATTHEW JUNG</h1>
