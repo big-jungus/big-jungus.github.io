@@ -5,10 +5,17 @@ import {useNavigate} from "react-router-dom";
 
 import "./css/stylesHome.css"
 
-const NavBar = () => {
+type Props = {
+  updateTarget: (element: string) => void;
+}
+
+const NavBar = ({
+  updateTarget
+}: Props) => {
   const navigate = useNavigate();
 
   const NavNavigation = (element:string) => {
+    updateTarget(element);
     navigate("/home");
     document.getElementById(element)?.scrollIntoView();
   }
@@ -20,9 +27,9 @@ const NavBar = () => {
         <Nav className="customNav" justify={true} fill={true}>
             <Nav.Link onClick={() => NavNavigation("recent")}>RECENT PROJECTS</Nav.Link>
             <Nav.Link onClick={() => navigate("/projects")}>ALL PROJECTS</Nav.Link>
-            <Navbar.Brand onClick={() => navigate("/home")}>MATTHEW JUNG</Navbar.Brand>
-            <Nav.Link onClick={() => navigate("/home")}>EXPERIENCE</Nav.Link>
-            <Nav.Link onClick={() => navigate("/home")}>CONTACT</Nav.Link>
+            <Navbar.Brand onClick={() => NavNavigation("about")}>MATTHEW JUNG</Navbar.Brand>
+            <Nav.Link onClick={() => NavNavigation("experience")}>EXPERIENCE</Nav.Link>
+            <Nav.Link onClick={() => NavNavigation("contact")}>CONTACT</Nav.Link>
           </Nav>
       </Container>
     </Navbar>

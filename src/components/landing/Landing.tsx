@@ -9,10 +9,12 @@ import "./css/stylesHome.css"
 
 type Props = {
     updateIndex: (index: number) => void;
+    updateTarget: (element: string) => void;
 }
 
 const Landing = ({
-        updateIndex
+        updateIndex,
+        updateTarget
     }: Props) => {
 
     // useEffect(() => {
@@ -27,7 +29,7 @@ const Landing = ({
     return (
         <>  
             <div className="page-container">
-                <NavBar />
+                <NavBar updateTarget={updateTarget}/>
                 <About />
                 <ProjectsRecent updateIndex={updateIndex}/>
                 <Experience />

@@ -12,6 +12,18 @@ function App() {
         setActiveIndex(newIndex);
     }
 
+    const [targetElement, setTargetElement] = useState("");
+
+    const updateTarget = (element:string) => {
+        setTargetElement(element);
+    }
+
+    window.onload = () => {
+        if (targetElement != ""){
+            document.getElementById(targetElement)?.scrollIntoView();
+        }
+    }
+
     return (
         <HashRouter basename="/">
             <Routes>
@@ -21,14 +33,18 @@ function App() {
                 />
                 <Route 
                     path="/home"
-                    element={ <Landing updateIndex={updateIndex} /> }
+                    element={ <Landing 
+                                    updateIndex={updateIndex}
+                                    updateTarget={updateTarget}
+                            /> }
                 />
                 <Route 
                     path="/projects"
                     element={ <ProjectsOverview
                                     index={activeIndex}
                                     updateIndex={updateIndex}
-                    /> }
+                                    updateTarget={updateTarget}
+                            /> }
                 />
             </Routes>
         </HashRouter>
