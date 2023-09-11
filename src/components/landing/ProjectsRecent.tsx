@@ -3,8 +3,8 @@ import { Button } from 'react-bootstrap';
 
 import "./css/stylesHome.css"
 
-import LR from "/images/projectCards/LR_card.jpg";
-import KOR from "/images/projectCards/KoR_card.png";
+import MM from "/images/projectCards/MM_card.png";
+import TLC from "/images/projectCards/TLC_card.png";
 import ZD from "/images/projectCards/ZD_card.png";
 
 type Props = {
@@ -22,19 +22,19 @@ const Projects = ({
             <div className="standardTopBorder projectsTopBorder" />
             <div className="recentProjects">
                 <ProjectCard 
-                            index={0}
-                            img={LR} 
-                            title="Light-Runner" 
-                            descShort="A futuristic 1-vs-1 Arena Shooter focused on destroying your opponents through superior movement."
+                            index={3}
+                            img={MM} 
+                            title="Musical Madness" 
+                            descShort="Restore musical harmony by traversing through an ever-changing dungeon to defeat corrupted instruments using your musical prowess!"
                             redirect="/projects"
 
                             updateIndex={updateIndex}
                         />
                 <ProjectCard 
-                            index={1}
-                            img={KOR} 
-                            title="King of the Ring" 
-                            descShort="A chess-boxing game set against a particular billionare an especially punchable face."
+                            index={3}
+                            img={TLC} 
+                            title="The Last Crucible" 
+                            descShort="The final Crucible Knight Zangard stands between you and your people's salvation. Fight back against Zangard and his forces to save your people!"
                             redirect="/projects"
 
                             updateIndex={updateIndex}
