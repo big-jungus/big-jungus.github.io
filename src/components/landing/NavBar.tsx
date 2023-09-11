@@ -8,12 +8,17 @@ import "./css/stylesHome.css"
 const NavBar = () => {
   const navigate = useNavigate();
 
+  const NavNavigation = (element:string) => {
+    navigate("/home");
+    document.getElementById(element)?.scrollIntoView();
+  }
+
   return (
     <Navbar expand="lg" className="navBarBackground" sticky="top" variant='dark'>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Nav className="customNav" justify={true} fill={true}>
-            <Nav.Link onClick={() => navigate("/home")}>RECENT PROJECTS</Nav.Link>
+            <Nav.Link onClick={() => NavNavigation("recent")}>RECENT PROJECTS</Nav.Link>
             <Nav.Link onClick={() => navigate("/projects")}>ALL PROJECTS</Nav.Link>
             <Navbar.Brand onClick={() => navigate("/home")}>MATTHEW JUNG</Navbar.Brand>
             <Nav.Link onClick={() => navigate("/home")}>EXPERIENCE</Nav.Link>
