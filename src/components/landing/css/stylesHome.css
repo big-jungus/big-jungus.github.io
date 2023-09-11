@@ -471,6 +471,8 @@ html {
 
     order: 3;
     border-radius: 0;
+
+    background-color: #a7adba;
 }
 
 .projectsTopBorder {
@@ -585,6 +587,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 40%;
 }
 
 
