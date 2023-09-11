@@ -73,6 +73,7 @@ html {
 .navbar-brand {
     font-size: 30px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .customNav {

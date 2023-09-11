@@ -17,7 +17,7 @@ const Projects = ({
     return(
         <div className="projectsBackground">
             <div className="anchor" id="recent"/>
-            <h1 className='sectionHeading'>RECENT PROJECTS</h1>
+            <h1 className='sectionHeading'>PROJECT HIGHLIGHTS</h1>
             
             <div className="standardTopBorder projectsTopBorder" />
             <div className="recentProjects">

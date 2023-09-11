@@ -57,6 +57,8 @@ const ProjectsOverview = ({
         date: "April 2023 - June 2023",
         link: "",
         images: [LR1, LR2, LR3],
+        role: "Programming, Design",
+        teamsize: "4",
         description: ``
     },
     {
@@ -65,6 +67,8 @@ const ProjectsOverview = ({
         date: "April 2023 - June 2023",
         link: "https://coleyoung02.itch.io/king-of-the-ring",
         images: [KoR1, KoR2, KoR3],
+        role: "UX/UI",
+        teamsize: "8",
         description: ``
     },
     {
@@ -73,6 +77,8 @@ const ProjectsOverview = ({
         date: "April 2023 - June 2023",
         link: "https://dg155.itch.io/zot-dev",
         images: [ZD1, ZD2, ZD3],
+        role: "Programming, UX/UI",
+        teamsize: "17",
         description: ``
     },
     {
@@ -81,6 +87,8 @@ const ProjectsOverview = ({
         date: "January 2023 - March 2023",
         link: "https://langzhezr.itch.io/the-last-crucible",
         images: [TLC1, TLC2, TLC3],
+        role: "Programming, Design",
+        teamsize: "11",
         description: `The Last Crucible is a Souls-like game featuring two levels, and a final boss. This game pulls inspiration from both Elden Ring and Sekiro, even featuring Sekiro's Posture meters for enemies.
 
                         This game was created for the Video Game Development Club at UCI, and I worked with a team of programmers, level designers, and writers to create this game! In addition to the two levels and boss, this game also features a voiced cutscene for the game's story. 
@@ -93,6 +101,8 @@ const ProjectsOverview = ({
         date: "April 2022 - June 2022",
         link: "https://dg155.itch.io/musical-madness",
         images: [MM1, MM2, MM3],
+        role: "Design, Programming",
+        teamsize: "6",
         description: `Musical Madness is a top down shooter dungeon crawler about using music to fight against musical instruments using various weapons. The player must collect note keys to proceed through each level, eventually reaching a final boss.
 
                         This game was created for the Video Game Development Club at UCI, and I worked alongside a full team of programmers, artists, and audio designers to create this game with three procedurally generated levels and a final boss!
@@ -107,6 +117,8 @@ const ProjectsOverview = ({
         date: "January 2022 - March 2022",
         link: "https://alby-albinodinosaur.itch.io/acid-trip-4-definitive-edition",
         images: [AT1, AT2, AT3],
+        role: "Design",
+        teamsize: "10",
         description: `Acid Trip 4 is a visual novel game, combined with turn-based combat sections. This game is a continuation of the Acid Trip games made for UCI's Video Game Development Club.
 
                         I worked in a team of 10 writers, programmers, designers, and an artist. I designed the combat system, and created and balanced all abilities for every character and enemy.
@@ -121,6 +133,8 @@ const ProjectsOverview = ({
         date: "April 28 - May 1 2023 (Ludum Dare 53)",
         link: "https://dg155.itch.io/delivery-bear",
         images: [DB1, DB2, DB3],
+        role: "Programming",
+        teamsize: "8",
         description: `Delivery Bear is a 3rd-person delivery game about a bear with a grappling hook, delivering honey for the Bear Mafia. Make your deliveries as fast as possible, as the BCPD (Bear City Police Department) is planning a raid!
 
                         This game was created for Ludum Dare 53, with a couple of friends and classmates. This game was one of our first experiences really working in Unreal Engine, making it really fun to learn about what Unreal can do compared to our previous experiences in Unity.`
@@ -131,6 +145,8 @@ const ProjectsOverview = ({
         date: "January 2022 - March 2022",
         link: "https://docs.google.com/presentation/d/1lpMFXaXc8ZnGLKMghT03eQ2M6IMzkIIYZ5Au_11PL04/edit?usp=sharing",
         images: [TB1, TB2, TB3],
+        role: "Programming, Data Analysis",
+        teamsize: "2",
         description: `Fall 2022, I designed and created an automated ETL pipeline using Python to gather data from 2700 games across all ranks in Riot Games's Teamfight Tactics. I also worked with one other partner to clean and analyze the data I had collected, providing us with our final results.
 
                         This was created as a final project for a course on data analytics in games, and aimed to answer research questions regarding the game as its season came to an end. Creating the data pipeline for this project was something I had never done before, but I found the data extraction and analysis processes to be extremely interesting. Although the Riot Games API provides limited game data for Teamfight Tactics compared to their other titles, my partner and I were able to produce significant results.`
@@ -182,6 +198,8 @@ const ProjectsOverview = ({
                                 
                             </div>
                             <div className="content">
+                                <h4>Role: {project.role}</h4>
+                                <h4>Team Size: {project.teamsize}</h4>
                                 <h4>{project.date}</h4>
                                 <Button className="projectLink" href={project.link} target="_blank">{(index === 7)?"PRESENTATION":"DOWNLOAD"}</Button>
                                 <p>{project.description}</p>
