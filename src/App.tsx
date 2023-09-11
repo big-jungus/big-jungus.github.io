@@ -1,5 +1,5 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
-import {useState} from "react";
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import {useState, useEffect} from "react";
 
 import Splash from './components/landing/Splash';
 import Landing from './components/landing/Landing';
@@ -18,11 +18,10 @@ function App() {
         setTargetElement(element);
     }
 
-    window.onload = () => {
-        if (targetElement != ""){
-            document.getElementById(targetElement)?.scrollIntoView();
-        }
-    }
+    let currentLocation = useLocation();
+    useEffect(() => {
+        document.getElementById(targetElement)?.scrollIntoView();
+    }, [currentLocation.pathname])
 
     return (
         <HashRouter basename="/">
