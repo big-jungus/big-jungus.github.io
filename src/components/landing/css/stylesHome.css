@@ -568,6 +568,10 @@ html {
 .contactBackground {
     order: 4;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 80vw;
 
     border: solid;
@@ -576,6 +580,13 @@ html {
 
     background-color: rgba(100, 100, 100, 0.65);
 }
+
+.contactImagesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 
 .links {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(65deg) brightness(100%) contrast(103%);

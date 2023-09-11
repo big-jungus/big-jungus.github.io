@@ -10,15 +10,17 @@ function Contact(){
             <div className="anchor" id="contact"/>
             <h1 className="sectionHeading">CONTACT</h1>
 
-            <a>
-                <img className="links" src={email} width={110} height={110}/>
-            </a>
-            <a>
-                <img className="links" src={linkedin}/>
-            </a>
-            <a>
-                <img className="" src={resume}/>
-            </a>
+            <div className="contactImagesContainer">
+                <a>
+                    <img className="links" src={email} width={110} height={110}/>
+                </a>
+                <a>
+                    <img className="" src={linkedin}/>
+                </a>
+                <a>
+                    <img className="" src={resume}/>
+                </a>
+            </div>
         </div>
     );
 }
