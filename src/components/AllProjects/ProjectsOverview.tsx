@@ -44,13 +44,11 @@ import TB3 from "/projectPictures/TFTBreakdown/TB3.png"
 type Props = {
     index: number;
     updateIndex: (index: number) => void;
-    updateTarget: (element: string) => void;
 }
 
 const ProjectsOverview = ({
         index,
-        updateIndex,
-        updateTarget
+        updateIndex
     }: Props) => {
 
     const projectsList = [{
@@ -158,7 +156,7 @@ const ProjectsOverview = ({
 
     return(
         <div className="pageContainer">
-        <NavBar updateTarget={updateTarget}/>
+        <NavBar />
             <div className="overviewBackground">
                 <ProjectSidebar index={index} updateIndex={updateIndex} projectsList={projectsList} clickAnim={click}/>
                 
