@@ -322,6 +322,10 @@
     max-width: fit-content;
     margin: 0.5vh 0 0.5vh1vw;
     border-radius: 0;
+    background-color: #747881;
+}
+
+.projectLink:hover {
     background-color: #a7adba;
 }
 
