@@ -1,5 +1,5 @@
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
-import {useState, useEffect} from "react";
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import {useState} from "react";
 
 import Splash from './components/landing/Splash';
 import Landing from './components/landing/Landing';
