@@ -201,7 +201,7 @@ const ProjectsOverview = ({
                                 <h4>Role: {project.role}</h4>
                                 <h4>Team Size: {project.teamsize}</h4>
                                 <h4>{project.date}</h4>
-                                <Button className="projectLink" href={project.link} target="_blank">{(index === 7)?"PRESENTATION":"DOWNLOAD"}</Button>
+                                <Button className="projectLink" href={project.link} target="_blank" variant="dark">{(index === 7)?"PRESENTATION":"DOWNLOAD"}</Button>
                                 <p>{project.description}</p>
                             </div>
                         </div>

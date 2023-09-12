@@ -1,5 +1,6 @@
 import ProjectCard from '../AllProjects/ProjectCard';
 import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
 import "./css/stylesHome.css"
 
@@ -14,6 +15,8 @@ type Props = {
 const Projects = ({
         updateIndex
     }: Props) =>{
+    const navigate = useNavigate();
+
     return(
         <div className="projectsBackground">
             <div className="anchor" id="recent"/>
@@ -49,7 +52,7 @@ const Projects = ({
                             updateIndex={updateIndex}
                         />
             </div>
-            <Button className="moreProjects" href="/projects">VIEW MORE PROJECTS HERE</Button>
+            <Button className="moreProjects" onClick={() => navigate("/projects")} variant="dark">VIEW MORE PROJECTS HERE</Button>
             <div className="standardBotBorder projectsBotBorder" />
             <div className="padding" />
         </div>

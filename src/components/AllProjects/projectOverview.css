@@ -320,15 +320,8 @@
 
 .projectLink {
     max-width: fit-content;
-    margin: 1vh 0.5vw 0.5vh 1vw;
+    margin: 1vh 0 0.5vh 1vw;
     border-radius: 0;
-    border: none;
-    background-color: #747881;
-}
-
-.projectLink:hover {
-    border: none;
-    background-color: #a7adba;
 }
 
 .content h4 {
@@ -339,7 +332,7 @@
 .content p {
     white-space: pre-line;
     font-size: large;
-    padding: 1vh 1vw 1vh 1vh;
+    padding: 1vh 0vw 1vh 1vh;
     margin-left: 0.5vw;
     color: white;
 }

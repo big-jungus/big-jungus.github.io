@@ -471,14 +471,6 @@ html {
 
     order: 3;
     border-radius: 0;
-    border: none;
-
-    background-color: #747881;
-}
-
-.moreProjects:hover {
-    border: none;
-    background-color: #a7adba;
 }
 
 .projectsTopBorder {
