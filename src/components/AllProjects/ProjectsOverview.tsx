@@ -53,50 +53,6 @@ const ProjectsOverview = ({
 
     const projectsList = [{
         id: 0,
-        title: "Light-Runner",
-        date: "April 2023 - June 2023",
-        link: "",
-        images: [LR1, LR2, LR3],
-        role: "Programming, Design",
-        teamsize: "4",
-        description: ``
-    },
-    {
-        id: 1,
-        title: "King of the Ring",
-        date: "April 2023 - June 2023",
-        link: "https://coleyoung02.itch.io/king-of-the-ring",
-        images: [KoR1, KoR2, KoR3],
-        role: "UX/UI",
-        teamsize: "8",
-        description: ``
-    },
-    {
-        id: 2,
-        title: "Zot Dev",
-        date: "April 2023 - June 2023",
-        link: "https://dg155.itch.io/zot-dev",
-        images: [ZD1, ZD2, ZD3],
-        role: "Programming, UX/UI",
-        teamsize: "17",
-        description: ``
-    },
-    {
-        id: 3,
-        title: "The Last Crucible",
-        date: "January 2023 - March 2023",
-        link: "https://langzhezr.itch.io/the-last-crucible",
-        images: [TLC1, TLC2, TLC3],
-        role: "Programming, Design",
-        teamsize: "11",
-        description: `The Last Crucible is a Souls-like game featuring two levels, and a final boss. This game pulls inspiration from both Elden Ring and Sekiro, even featuring Sekiro's Posture meters for enemies.
-
-                        This game was created for the Video Game Development Club at UCI, and I worked with a team of programmers, level designers, and writers to create this game! In addition to the two levels and boss, this game also features a voiced cutscene for the game's story. 
-
-                        I personally worked on designing the final boss, as well as programming and implementing two enemy behaviors and the boss's two ranged attacks. `
-    },
-    {
-        id: 4,
         title: "Musical Madness",
         date: "April 2022 - June 2022",
         link: "https://dg155.itch.io/musical-madness",
@@ -110,6 +66,60 @@ const ProjectsOverview = ({
                         I also designed and programmed the Grand Piano final boss. This final boss was personally one of my favorite parts of my projects, as it was a challenge to balance both creating this boss and cramming for finals at the same time.
 
                         You can skip ahead to access to the boss by using the shortcut: Shift+Alt+B.`
+    },
+    {
+        id: 1,
+        title: "The Last Crucible",
+        date: "January 2023 - March 2023",
+        link: "https://langzhezr.itch.io/the-last-crucible",
+        images: [TLC1, TLC2, TLC3],
+        role: "Programming, Design",
+        teamsize: "11",
+        description: `The Last Crucible is a Souls-like game featuring two levels, and a final boss. This game pulls inspiration from both Elden Ring and Sekiro, even featuring Sekiro's Posture meters for enemies.
+
+                        This game was created for the Video Game Development Club at UCI, and I worked with a team of programmers, level designers, and writers to create this game! In addition to the two levels and boss, this game also features a voiced cutscene for the game's story. 
+
+                        I personally worked on designing the final boss, as well as programming and implementing two enemy behaviors and the boss's two ranged attacks. `
+    },
+    {
+        id: 2,
+        title: "Zot Dev",
+        date: "April 2023 - June 2023",
+        link: "https://dg155.itch.io/zot-dev",
+        images: [ZD1, ZD2, ZD3],
+        role: "Programming, UX/UI",
+        teamsize: "17",
+        description: `Zot Dev is a simulation game based on the experiences of a GDIM student at UCI! Players must balance between keeping good grades, successful VGDC projects, and their own mental health! This game features a variety of cameos who will help to improve your game development skills!
+
+        This game was created for a course in UCI's Game Development major. I worked alongside three other programmers and one other UX/UI designer, handling both general gameplay programming and UI implementation as well as designing the UI for the main game! My main focus for this game was on the game's task system for both classes and projects, as well as features surrounding them. I also worked as a general helping hand, squashing various bugs and implementing other small features.`
+    },
+    {
+        id: 3,
+        title: "King of the Ring",
+        date: "April 2023 - June 2023",
+        link: "https://coleyoung02.itch.io/king-of-the-ring",
+        images: [KoR1, KoR2, KoR3],
+        role: "UX/UI",
+        teamsize: "8",
+        description: `King of the Ring is a chess-boxing game where players are pitted against a billionaire with an especially punchable face. Players must best this billionaire in a bout of four rounds of chess and boxing! 
+
+        This game was created for the Video Game Development Club at UCI, and I personally worked as the UX/UI designer for this game. I designed the main gameplay UI for the game, and balanced the boxing portions of the game. 
+
+        Part of the challenge of designing this game's UI came from the game's limited pixel size. Because I had limited space to work with, I had to design a UI that would keep the focus on the core gameplay while still displaying all relevant information for players.`
+    },
+    {
+        id: 4,
+        title: "Light-Runner",
+        date: "April 2023 - June 2023",
+        link: "https://big-jungus.itch.io/light-runner",
+        images: [LR1, LR2, LR3],
+        role: "Programming, Design",
+        teamsize: "4",
+        description: `Light-Runner is a 1v1 arena shooter focused heavily on movement mechanics. Defeat your opponent through superior aim and movement, using sliding, wall-running, and ledge techs!
+
+        This game was created for a multiplayer course in UCI's Game Development major. I worked on team of four, and I specifically focused on designing and implementing the game's movement mechanics. I also implemented the game's UI! 
+
+        This project was personally a huge learning experience in how Unreal's multiplayer systems work, and created a newfound love for working in Unreal!`
     },
     {
         id: 5,

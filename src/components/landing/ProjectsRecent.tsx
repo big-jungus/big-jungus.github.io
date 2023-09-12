@@ -25,7 +25,7 @@ const Projects = ({
             <div className="standardTopBorder projectsTopBorder" />
             <div className="recentProjects">
                 <ProjectCard 
-                            index={3}
+                            index={0}
                             img={MM} 
                             title="Musical Madness" 
                             descShort="Restore musical harmony by traversing through an ever-changing dungeon to defeat corrupted instruments using your musical prowess!"
@@ -34,7 +34,7 @@ const Projects = ({
                             updateIndex={updateIndex}
                         />
                 <ProjectCard 
-                            index={3}
+                            index={1}
                             img={TLC} 
                             title="The Last Crucible" 
                             descShort="The final Crucible Knight Zangard stands between you and your people's salvation. Fight back against Zangard and his forces to save your people!"
