@@ -13,7 +13,7 @@ function Experience () {
                 </a>
                 
                 <div>
-                    <h3 className="experiencePos">Multimedia/Game Programming Intern</h3>
+                    <h3 className="experiencePos">Game Programming Intern</h3>
                     <h3 className="experienceDate"><i>June 2023 - August 2023</i></h3>
                 </div>
             </div>
