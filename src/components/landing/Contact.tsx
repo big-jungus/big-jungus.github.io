@@ -17,7 +17,7 @@ function Contact(){
                 <a href="https://www.linkedin.com/in/matthewjung1010/" target="_blank">
                     <img className="contactImage " src={linkedin}/>
                 </a>
-                <a href="Matthew Jung - Resume.pdf" target="_blank">
+                <a href="Resume - Matthew Jung.pdf" target="_blank">
                     <img className="contactImage " src={resume}/>
                 </a>
             </div>
