@@ -1,5 +1,4 @@
 import Card from "react-bootstrap/Card"
-import {useNavigate} from "react-router-dom";
 
 import "./projectCard.css"
 
@@ -9,7 +8,8 @@ type Props = {
     title:string; 
     descShort:string; 
     redirect:string;
-    updateIndex: (index: number) => void;
+    updateIndex: (index: number) => void,
+    setProjects: (flag:boolean) => void;
 }
 
 const ProjectCard = ({
@@ -17,14 +17,13 @@ const ProjectCard = ({
         img,
         title,
         descShort,
-        redirect,
-        updateIndex
+        updateIndex,
+        setProjects
     }: Props) => {
-    const navigate = useNavigate();
 
     function viewProject () {
         updateIndex(index);
-        navigate(redirect);
+        setProjects(true);
     }
 
     return(

@@ -1,5 +1,3 @@
-import NavBar from "./NavBar";
-
 import About from "./About";
 import ProjectsRecent from "./ProjectsRecent";
 import Experience from "./Experience";
@@ -7,11 +5,17 @@ import Contact from "./Contact";
 
 import "./css/stylesHome.css"
 
+import { useEffect } from "react";
+
 type Props = {
+    getProjects: boolean,
+    setProjects: (flag: boolean) => void,
     updateIndex: (index: number) => void;
 }
 
 const Landing = ({
+        getProjects,
+        setProjects,
         updateIndex
     }: Props) => {
 
@@ -24,12 +28,19 @@ const Landing = ({
     //         // use css to set page content display: visible (?)
     // }, [])
 
+    useEffect(() => {
+        if (getProjects){
+            document.body.style.overflow = "hidden";
+        }else{
+            document.body.style.overflow = "auto";
+        }
+    }, [getProjects])
+
     return (
         <>  
             <div className="page-container">
-                <NavBar />
                 <About />
-                <ProjectsRecent updateIndex={updateIndex}/>
+                <ProjectsRecent setProjects={setProjects} updateIndex={updateIndex}/>
                 <Experience />
                 <Contact />
             </div>

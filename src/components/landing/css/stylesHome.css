@@ -108,7 +108,7 @@ html {
     border-color: white;
     border-width: 1px;
 
-    background-color: rgba(100, 100, 100, 0.65);
+    background-color: rgba(100, 100, 100, 0.85);
 }
 
 .aboutHeading {
@@ -122,7 +122,7 @@ html {
     margin: 0 auto;
     
     animation: 
-    headingLoad 1s 1.5s;
+    headingLoad 1s 0.75s;
     animation-fill-mode: forwards;
 }
 
@@ -165,7 +165,7 @@ html {
 
     margin: 0 1vh 0 1vh;
 
-    animation: aboutPictureAnimation 0.3s 3.5s;
+    animation: aboutPictureAnimation 0.3s 3.25s;
     animation-fill-mode: forwards;
 }
 
@@ -200,163 +200,8 @@ html {
     scale: 0.6;
     opacity: 0;
 
-    animation: paragraph 0.5s 4.5s;
+    animation: paragraph 0.5s 2.5s;
     animation-fill-mode: forwards;
-}
-
-@keyframes paragraphLoad {
-    100% {
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 100%, 
-        rgba(255,255,255, 1) 100%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    95%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 95%, 
-        rgba(255,255,255, 1) 95%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    90%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 90%, 
-        rgba(255,255,255, 1) 90%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    85%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 85%, 
-        rgba(255,255,255, 1) 85%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    80%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 80%, 
-        rgba(255,255,255, 1) 80%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    75%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 75%, 
-        rgba(255,255,255, 1) 75%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    70%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 70%, 
-        rgba(255,255,255, 1) 70%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    65%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 65%, 
-        rgba(255,255,255, 1) 65%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    60%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 60%, 
-        rgba(255,255,255, 1) 60%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    55%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 55%, 
-        rgba(255,255,255, 1) 55%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    50%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 50%, 
-        rgba(255,255,255, 1) 50%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    45%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 45%, 
-        rgba(255,255,255, 1) 45%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    40%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 40%, 
-        rgba(255,255,255, 1) 40%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    35%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 35%, 
-        rgba(255,255,255, 1) 35%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    20%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 20%, 
-        rgba(255,255,255, 1) 20%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    15%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 15%, 
-        rgba(255,255,255, 1) 15%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    10%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 10%, 
-        rgba(255,255,255, 1) 10%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    5%{
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 5%, 
-        rgba(255,255,255, 1) 5%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    0% {
-        background: linear-gradient(to top,
-        rgba(255,255,255, 0) 0%, 
-        rgba(255,255,255, 1) 0%
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }
 
 @keyframes paragraph {
@@ -378,7 +223,7 @@ html {
     border-color: white;
     border-width: 0;
 
-    animation: topBorderAnimation 1.5s 2.5s;
+    animation: topBorderAnimation 1.25s 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -407,7 +252,7 @@ html {
     border-color: white;
     border-width: 0;
 
-    animation: botBorderAnimation 1.5s 2.5s;
+    animation: botBorderAnimation 1.25s 1.5s;
     animation-fill-mode: forwards;
 }
 
@@ -446,7 +291,7 @@ html {
     border-color: white;
     border-width: 1px;
 
-    background-color: rgba(100, 100, 100, 0.65);
+    background-color: rgba(100, 100, 100, 0.85);
 }
 
 .recentProjects {
@@ -500,7 +345,7 @@ html {
 
     padding: 1vh 1vw 1vh 1vw;
 
-    background-color: rgba(100, 100, 100, 0.65);
+    background-color: rgba(100, 100, 100, 0.85);
 }
 
 .experienceHeader {
@@ -578,7 +423,7 @@ html {
     border-color: #ffffff;
     border-width: 1px;
 
-    background-color: rgba(100, 100, 100, 0.65);
+    background-color: rgba(100, 100, 100, 0.85);
 }
 
 .contactImagesContainer {

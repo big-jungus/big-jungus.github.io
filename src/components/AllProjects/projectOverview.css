@@ -1,6 +1,17 @@
 .pageContainer {
-    background-image: url(/images/gridbackground.jpg);
-    background-size: 10%;
+    
+    position: fixed;
+    z-index: 10;
+    top: 6vh;
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+
+    z-index: 9;
 }
 
 .overviewTopBorder { 
@@ -45,8 +56,6 @@
 
     display: flex;
     flex-direction: row;
-
-    background-color: black;
 }
 
 .projectsSidebar {
@@ -58,8 +67,7 @@
     flex-direction: column;
     justify-content: space-between;
 
-    background-image: url(/images/gridbackground.jpg);
-    background-size: 10%;
+    margin: 1vh 0 1vw 1vh;
 }
 
 .projectSide {
@@ -73,9 +81,7 @@
     border-width: 1px;
     border-color: white;
 
-    background-color: rgba(100, 100, 100, 0.65);
-
-    margin: 0 0 0.5vh 0;
+    background-color: rgba(100, 100, 100, 0.85);
 
     cursor: pointer;
 }
@@ -127,7 +133,7 @@
     border-width: 1px;
     border-color: white;
 
-    background-color: rgba(170, 170, 170, 0.65);
+    background-color: rgba(170, 170, 170, 0.85);
 
     margin: 0 0 0.5vh 0;
 
@@ -158,14 +164,11 @@
 }
 
 
-
-
 .projectsMain {
     order: 1;
     flex: 4;
 
-    background-image: url(/images/gridbackground.jpg);
-    background-size: 10%;
+    padding-top: 1vh;
 }
 
 .project {
@@ -180,7 +183,7 @@
     border-width: 1px;
     border-color: white;
     
-    background-color: rgba(100, 100, 100, 0.65);
+    background-color: rgba(100, 100, 100, 0.85);
 
     padding: 1vh 1vw 1vh 1vw;
     margin: 0 1vw 0 1vw;
@@ -193,6 +196,17 @@
 .projectAnim {
     transform: scaleY(0);
     transition: transform 0.4s 0.8s;
+}
+
+.exit {
+    position: fixed;
+    right: 0.5vw;
+
+    font-weight: 1000;
+    font-size: larger;
+
+    border-radius: 0;
+    border-width: 0;
 }
 
 .projectTitle {

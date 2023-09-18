@@ -1,54 +1,54 @@
 import "./projectOverview.css"
 import ProjectSidebar from "./ProjectSidebar";
-import NavBar from "../landing/NavBar";
 import { Button } from 'react-bootstrap';
-
 
 import {useState, useEffect} from "react";
 import {useTimer} from "./useTimer.tsx"
 
 /*I'd like to do this using the require() function, but I guess I would need to do some more setup with client-side JS which I need more time to read up on, which I don't have.
     If you're looking at this, I'm sorry for the sins I have committed*/
-import LR1 from "/projectPictures/LightRunner/LR1.jpg"
-import LR2 from "/projectPictures/LightRunner/LR2.gif"
-import LR3 from "/projectPictures/LightRunner/LR3.png"
+const LR1 = "/projectPictures/LightRunner/LR1.jpg"
+const LR2 = "/projectPictures/LightRunner/LR2.gif"
+const LR3 = "/projectPictures/LightRunner/LR3.png"
 
-import KoR1 from "/projectPictures/KingOfTheRing/KoR1.png";
-import KoR2 from "/projectPictures/KingOfTheRing/KoR2.png";
-import KoR3 from "/projectPictures/KingOfTheRing/KoR3.png";
+const KoR1 = "/projectPictures/KingOfTheRing/KoR1.png";
+const KoR2 = "/projectPictures/KingOfTheRing/KoR2.png";
+const KoR3 = "/projectPictures/KingOfTheRing/KoR3.png";
 
-import ZD1 from "/projectPictures/ZotDev/ZD1.png"
-import ZD2 from "/projectPictures/ZotDev/ZD2.png"
-import ZD3 from "/projectPictures/ZotDev/ZD3.png"
+const ZD1 = "/projectPictures/ZotDev/ZD1.png"
+const ZD2 = "/projectPictures/ZotDev/ZD2.png"
+const ZD3 = "/projectPictures/ZotDev/ZD3.png"
 
-import TLC1 from "/projectPictures/TheLastCrucible/TLC1.png";
-import TLC2 from "/projectPictures/TheLastCrucible/TLC2.gif";
-import TLC3 from "/projectPictures/TheLastCrucible/TLC3.png";
+const TLC1 = "/projectPictures/TheLastCrucible/TLC1.png";
+const TLC2 = "/projectPictures/TheLastCrucible/TLC2.gif";
+const TLC3 = "/projectPictures/TheLastCrucible/TLC3.png";
 
-import MM1 from "/projectPictures/MusicalMadness/MM1.png"
-import MM2 from "/projectPictures/MusicalMadness/MM2.png"
-import MM3 from "/projectPictures/MusicalMadness/MM3.png"
+const MM1 = "/projectPictures/MusicalMadness/MM1.png"
+const MM2 = "/projectPictures/MusicalMadness/MM2.png"
+const MM3 = "/projectPictures/MusicalMadness/MM3.png"
 
-import AT1 from "/projectPictures/AcidTrip/AT1.png";
-import AT2 from "/projectPictures/AcidTrip/AT2.png";
-import AT3 from "/projectPictures/AcidTrip/AT3.png";
+const AT1 = "/projectPictures/AcidTrip/AT1.png";
+const AT2 = "/projectPictures/AcidTrip/AT2.png";
+const AT3 = "/projectPictures/AcidTrip/AT3.png";
 
-import DB1 from "/projectPictures/DeliveryBear/DB1.png";
-import DB2 from "/projectPictures/DeliveryBear/DB2.png";
-import DB3 from "/projectPictures/DeliveryBear/DB3.png";
+const DB1 = "/projectPictures/DeliveryBear/DB1.png";
+const DB2 = "/projectPictures/DeliveryBear/DB2.png";
+const DB3 = "/projectPictures/DeliveryBear/DB3.png";
 
-import TB1 from "/projectPictures/TFTBreakdown/TB1.png"
-import TB2 from "/projectPictures/TFTBreakdown/TB2.png"
-import TB3 from "/projectPictures/TFTBreakdown/TB3.png"
+const TB1 = "/projectPictures/TFTBreakdown/TB1.png"
+const TB2 = "/projectPictures/TFTBreakdown/TB2.png"
+const TB3 = "/projectPictures/TFTBreakdown/TB3.png"
 
 type Props = {
     index: number;
-    updateIndex: (index: number) => void;
+    updateIndex: (index: number) => void,
+    setProjects: (flag: boolean) => void
 }
 
 const ProjectsOverview = ({
         index,
-        updateIndex
+        updateIndex,
+        setProjects
     }: Props) => {
 
     const projectsList = [{
@@ -181,46 +181,49 @@ const ProjectsOverview = ({
     }, [running])
 
     return(
-        <div className="pageContainer">
-        <NavBar />
-            <div className="overviewBackground">
-                <ProjectSidebar index={index} updateIndex={updateIndex} projectsList={projectsList} clickAnim={click}/>
-                
-                <div className="projectsMain">
-                    <div className={clickAnim?"projectAnim project":"project"}>
-                        
-                           
-                        <h1 className="projectTitle">
-                            {project.title}
-                        </h1>
-
-                        <div className="overviewTopBorder"/>
-                        
-                        <div className="projectBody">
-                            <div className="pictures">
-                                <img className="images" src={project.images[0]} />
-                                <img className="images" src={project.images[1]} />
-
-                                <a className={(index === 7)?"":"inactiveLink"} href={(index === 7)?project.link:""} target="_blank">
-                                    <img className={"images"} src={project.images[2]}/>
-                                </a>
-                                
-                                
-                            </div>
-                            <div className="content">
-                                <h4>Role: {project.role}</h4>
-                                <h4>Team Size: {project.teamsize}</h4>
-                                <h4>{project.date}</h4>
-                                <Button className="projectLink" href={project.link} target="_blank" variant="dark">{(index === 7)?"PRESENTATION":"DOWNLOAD"}</Button>
-                                <p>{project.description}</p>
-                            </div>
-                        </div>
-                        <div className="overviewBotBorder"/>   
+        <>
+            <div className="pageContainer">
+                <div className="overviewBackground">
+                    <ProjectSidebar index={index} updateIndex={updateIndex} projectsList={projectsList} clickAnim={click}/>
                     
+                    <div className="projectsMain">
+                        <div className={clickAnim?"projectAnim project":"project"}>
+                            
+                            <h1 className="projectTitle">
+                                {project.title}
+                            </h1>
+
+                            <Button className="exit" onClick={() => setProjects(false)} variant="danger">X</Button>
+
+                            <div className="overviewTopBorder"/>
+                            
+                            <div className="projectBody">
+                                <div className="pictures">
+                                    <img className="images" src={project.images[0]} />
+                                    <img className="images" src={project.images[1]} />
+
+                                    <a className={(index === 7)?"":"inactiveLink"} href={(index === 7)?project.link:""} target="_blank">
+                                        <img className={"images"} src={project.images[2]}/>
+                                    </a>
+                                    
+                                    
+                                </div>
+                                <div className="content">
+                                    <h4>Role: {project.role}</h4>
+                                    <h4>Team Size: {project.teamsize}</h4>
+                                    <h4>{project.date}</h4>
+                                    <Button className="projectLink" href={project.link} target="_blank" variant="dark">{(index === 7)?"PRESENTATION":"DOWNLOAD"}</Button>
+                                    <p>{project.description}</p>
+                                </div>
+                            </div>
+                            <div className="overviewBotBorder"/>   
+                        
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div className="background"/> 
+        </>
     );
 }
 

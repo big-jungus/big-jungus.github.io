@@ -1,21 +1,21 @@
 import ProjectCard from '../AllProjects/ProjectCard';
 import { Button } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
 
 import "./css/stylesHome.css"
 
-import MM from "/images/projectCards/MM_card.png";
-import TLC from "/images/projectCards/TLC_card.png";
-import ZD from "/images/projectCards/ZD_card.png";
+const MM = "/images/projectCards/MM_card.png";
+const TLC = "/images/projectCards/TLC_card.png";
+const ZD = "/images/projectCards/ZD_card.png";
 
 type Props = {
+    setProjects: (flag: boolean) => void,
     updateIndex: (index: number) => void;
 }
 
 const Projects = ({
+        setProjects,
         updateIndex
     }: Props) =>{
-    const navigate = useNavigate();
 
     return(
         <div className="projectsBackground">
@@ -32,6 +32,7 @@ const Projects = ({
                             redirect="/projects"
 
                             updateIndex={updateIndex}
+                            setProjects={setProjects}
                         />
                 <ProjectCard 
                             index={1}
@@ -41,6 +42,7 @@ const Projects = ({
                             redirect="/projects"
 
                             updateIndex={updateIndex}
+                            setProjects={setProjects}
                         />
                 <ProjectCard 
                             index={2}
@@ -50,9 +52,10 @@ const Projects = ({
                             redirect="/projects"
 
                             updateIndex={updateIndex}
+                            setProjects={setProjects}
                         />
             </div>
-            <Button className="moreProjects" onClick={() => navigate("/projects")} variant="dark">VIEW MORE PROJECTS HERE</Button>
+            <Button className="moreProjects" variant="dark" onClick={() => setProjects(true)}>VIEW MORE PROJECTS HERE</Button>
             <div className="standardBotBorder projectsBotBorder" />
             <div className="padding" />
         </div>

@@ -1,37 +1,36 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
 import {useState} from "react";
 
 import Splash from './components/landing/Splash';
 import Landing from './components/landing/Landing';
 import ProjectsOverview from './components/AllProjects/ProjectsOverview';
+import NavBar from "./components/landing/NavBar";
+
+import "./components/landing/css/stylesHome.css"
 
 function App() {
     const [activeIndex, setActiveIndex] = useState(0);
-
-    const updateIndex = (newIndex: number) => {
-        setActiveIndex(newIndex);
-    }
+    const [projectsState, setProjects] = useState(false);
+    const [splashState, setSplash] = useState(false);
 
     return (
-        <HashRouter basename="/">
-            <Routes>
-                <Route 
-                    path="/"
-                    element={ <Splash/> }
-                />
-                <Route 
-                    path="/home"
-                    element={ <Landing updateIndex={updateIndex} /> }
-                />
-                <Route 
-                    path="/projects"
-                    element={ <ProjectsOverview
-                                    index={activeIndex}
-                                    updateIndex={updateIndex}
-                    /> }
-                />
-            </Routes>
-        </HashRouter>
+        <>
+            <div className="page-container">
+                {!splashState && <Splash setSplash={setSplash}/>}
+                <NavBar 
+                    getProjects={projectsState} 
+                    setProjects={setProjects}/>
+
+                {projectsState && <ProjectsOverview 
+                                        index={activeIndex} 
+                                        updateIndex={setActiveIndex}
+                                        setProjects={setProjects} />}
+
+                <Landing 
+                    getProjects={projectsState} 
+                    setProjects={setProjects} 
+                    updateIndex={setActiveIndex} />
+            </div>
+        </>
     );
 }
 export default App;
