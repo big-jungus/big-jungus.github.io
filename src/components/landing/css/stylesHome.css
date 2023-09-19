@@ -98,7 +98,7 @@ html {
         max-height: 6vh;
     
         color: white;
-        font-size: 1.75vw;
+        font-size: 2vw;
         font-weight: 300;
         background-color: rgba(0, 0, 0, 0.35) !important;
     }
@@ -297,7 +297,7 @@ html {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 420px){
     .aboutPicture {
         height: 250px;
         width: 250px;
@@ -492,7 +492,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 40%;
+    width: 60%;
 
     align-items: center;
     align-self: center;
@@ -504,17 +504,16 @@ html {
 }
 
 .contactImage {
+    height: 11vw;
+    width: 11vw;
     cursor: pointer;
 }
 
 .email {
-    padding-right: 10px;
+    margin-right: 1vw;
 }
 
 @media (max-width: 1000px) {
-    .contactImagesContainer {
-        width: 60%;
-    }
 
     .contactImage {
         width: 11vw;

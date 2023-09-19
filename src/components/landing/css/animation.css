@@ -75,6 +75,12 @@
     animation: leftDot 5s 1;
 }
 
+@media (max-width: 900px) {
+    .leftDot {
+        animation: leftDotPhone 5s 1;
+    }
+}
+
 @keyframes leftDot {
     8% {
         opacity: 0;
@@ -110,9 +116,50 @@
     }
 }
 
+@keyframes leftDotPhone {
+    8% {
+        opacity: 0;
+        left: 40vw;
+    }
+
+    9% {
+        opacity: 1;
+        left: 40vw;
+    }
+
+    12% {
+        opacity: 1;
+        left: 40vw;
+    }
+    
+    13% {
+        opacity: 1;
+        left: 40vw;
+    }
+
+    19% {
+        left: 12vw;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        left: 12vw;
+    }
+}
+
 .rightDot{
     opacity: 0;
     animation: rightDot 5s 1;
+}
+
+@media (max-width: 900px) {
+    .rightDot {
+        animation: rightDotPhone 5s 1;
+    }
 }
 
 @keyframes rightDot {
@@ -147,6 +194,41 @@
     100% {
         opacity: 0;
         right: 28.5vw;
+    }
+}
+
+@keyframes rightDotPhone {
+    8% {
+        opacity: 0;
+        right: 40vw;
+    }
+
+    9% {
+        opacity: 1;
+        right: 40vw;
+    }
+
+    12% {
+        opacity: 1;
+        right: 40vw;
+    }
+    
+    13% {
+        opacity: 1;
+        right: 40vw;
+    }
+
+    19% {
+        right: 12vw;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        right: 12vw;
     }
 }
 
@@ -314,6 +396,12 @@
     animation: progressBar 5s 1;
 }
 
+@media (max-width: 900px) {
+    .progressBar {
+        animation: progressBarPhone 5s 1;
+    }
+}
+
 @keyframes progressBar {
     29% {
         opacity: 0;
@@ -337,5 +425,31 @@
     100% {
         opacity: 0;
         width: 33vw
+    }
+}
+
+@keyframes progressBarPhone {
+    29% {
+        opacity: 0;
+        
+    }
+    30% {
+        opacity: 1;
+        width: 0vw;
+    }
+    77% {
+        opacity: 1;
+        width: 56vw;
+    }
+    78% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 56vw
     }
 }

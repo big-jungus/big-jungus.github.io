@@ -352,13 +352,46 @@
     margin-left: 0.5vw;
     color: white;
 }
+@media (max-width: 1000px) {
 
-@media (max-width: 800px) {
     .projectSide h4 {
         font-size: 3vw;
     }
 
     .projectSelected h4 {
         font-size: 3vw;
+    }
+
+    .projectSelected {
+        height: 6vh;
+    }
+
+    .projectSide {
+        height: 6vh;
+    }
+
+    .images {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 420px) {
+    .images {
+        max-width: 0px;
+        border-width: 0;
+    }
+
+    .projectTitle {
+        font-size: 25px;
+    }
+
+    .content h4 {
+        font-size: 17px;
+    }
+
+    .content p {
+        font-size: 14px;
+        padding-right: 1.5vw;
+        padding-bottom: 0vh;
     }
 }
