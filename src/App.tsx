@@ -16,9 +16,9 @@ function App() {
         <>
             <div className="page-container">
                 {!splashState && <Splash setSplash={setSplash}/>}
-                <NavBar 
+                {splashState && <NavBar 
                     getProjects={projectsState} 
-                    setProjects={setProjects}/>
+                    setProjects={setProjects}/>}
 
                 {projectsState && <ProjectsOverview 
                                         index={activeIndex} 

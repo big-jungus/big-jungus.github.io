@@ -112,6 +112,7 @@
     color: white;
 
     align-self: center;
+    text-align: center;
     transform: translateY(10%);
 
     padding: 0 1vw 0 1vw;
@@ -146,6 +147,7 @@
     color: white;
 
     align-self: center;
+    text-align: center;
     transform: translateY(10%);
 
     padding: 0 1vw 0 1vw;
@@ -349,4 +351,14 @@
     padding: 1vh 0vw 1vh 1vh;
     margin-left: 0.5vw;
     color: white;
+}
+
+@media (max-width: 800px) {
+    .projectSide h4 {
+        font-size: 3vw;
+    }
+
+    .projectSelected h4 {
+        font-size: 3vw;
+    }
 }

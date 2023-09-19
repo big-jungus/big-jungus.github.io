@@ -30,7 +30,7 @@ const NavBar = ({
 
 
   return (
-    <Navbar expand="lg" className="navBarBackground" sticky="top" variant='dark'>
+    <Navbar expand={true} className="navBarBackground" sticky="top" variant='dark'>
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Nav className="customNav" justify={true} fill={true}>

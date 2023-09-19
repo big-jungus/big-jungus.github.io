@@ -12,7 +12,7 @@ function Contact(){
 
             <div className="contactImagesContainer">
                 <a href="mailto: matthewjung1010@gmail.com" target="_blank">
-                    <img className="contactImage links" src={email} width={110} height={110}/>
+                    <img className="contactImage links email" src={email} width={110} height={110}/>
                 </a>
                 <a href="https://www.linkedin.com/in/matthewjung1010/" target="_blank">
                     <img className="contactImage " src={linkedin}/>
