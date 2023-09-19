@@ -3,9 +3,9 @@ import { Button } from 'react-bootstrap';
 
 import "./css/stylesHome.css"
 
-const MM = "/images/projectCards/MM_card.png";
-const TLC = "/images/projectCards/TLC_card.png";
-const ZD = "/images/projectCards/ZD_card.png";
+import MM from "/images/projectCards/MM_card.png";
+import TLC from "/images/projectCards/TLC_card.png";
+import ZD from "/images/projectCards/ZD_card.png";
 
 type Props = {
     setProjects: (flag: boolean) => void,
