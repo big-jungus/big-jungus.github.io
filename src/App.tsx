@@ -4,7 +4,6 @@
     import LR2 from "/projectPictures/LightRunner/LR2.gif"
     import LR3 from "/projectPictures/LightRunner/LR3.png"
     
-    import KoR1 from "/projectPictures/KingOfTheRing/KoR1.png";
     import KoR2 from "/projectPictures/KingOfTheRing/KoR2.png";
     import KoR3 from "/projectPictures/KingOfTheRing/KoR3.png";
     
