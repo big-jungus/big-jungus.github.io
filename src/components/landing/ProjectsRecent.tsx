@@ -58,7 +58,7 @@ const Projects = ({
             <div className="scrollingBackground">
                 <div className="leftToRightText">
                     <div className="scrollingItem">
-                    CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt;
+                    CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt;
                     </div>
                 </div>
             </div>

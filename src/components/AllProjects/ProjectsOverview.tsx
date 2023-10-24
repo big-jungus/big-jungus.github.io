@@ -16,6 +16,14 @@ const ProjectsOverview = ({
 
     let project = projectsList[index]
 
+    const projectsImage = project.images.map(image =>
+        <a className={(project.id == 7)?"":"inactiveLink"} href={(project.id == 7)?project.link:""} target="_blank">
+            <img className={"images"} src={image}/>
+        </a>
+
+        
+        );
+
     return(
         <>
             <div className="overviewBackground">
@@ -38,12 +46,7 @@ const ProjectsOverview = ({
                 <div className="projectBody">
                     
                     <div className="pictures">
-                        <img className="images" src={project.images[0]} />
-                        <img className="images" src={project.images[1]} />
-
-                        <a className={(index === 7)?"":"inactiveLink"} href={(index === 7)?project.link:""} target="_blank">
-                            <img className={"images"} src={project.images[2]}/>
-                        </a>
+                        {projectsImage}
                     </div>
 
                     <div className="scrollingBar">

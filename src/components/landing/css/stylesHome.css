@@ -88,15 +88,15 @@ p{
     
     border-top: 10vw solid #282828;
 
-    animation: TopToBottom 3s infinite linear;
+    animation: TopToBottom 10s infinite linear;
 }
 
 @keyframes TopToBottom {
     from {
-        transform: translateY(-20%);
+        transform: translateY(-70%);
     }
     to {
-        transform: translateY(159%);
+        transform: translateY(83%);
     }
 }
 

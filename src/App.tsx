@@ -16,9 +16,10 @@
     import TLC2 from "/projectPictures/TheLastCrucible/TLC2.gif";
     import TLC3 from "/projectPictures/TheLastCrucible/TLC3.png";
     
-    import MM1 from "/projectPictures/MusicalMadness/MM1.png"
-    import MM2 from "/projectPictures/MusicalMadness/MM2.png"
-    import MM3 from "/projectPictures/MusicalMadness/MM3.png"
+    import MM1 from "/projectPictures/MusicalMadness/MM4.png"
+    import MM2 from "/projectPictures/MusicalMadness/MM1.png"
+    import MM3 from "/projectPictures/MusicalMadness/MM2.png"
+    import MM4 from "/projectPictures/MusicalMadness/MM3.png"
     
     import AT1 from "/projectPictures/AcidTrip/AT1.png";
     import AT2 from "/projectPictures/AcidTrip/AT2.png";
@@ -77,7 +78,7 @@ function App() {
         title: "MUSICAL MADNESS",
         date: "April 2022 - June 2022",
         link: "https://dg155.itch.io/musical-madness",
-        images: [MM1, MM2, MM3],
+        images: [MM1, MM3, MM4, MM2],
         role: "Design, Programming",
         teamsize: "6",
         short: `Explore a vast dungeon, fighting against various musical instruments to restore musical harmony to the world!`,
@@ -94,7 +95,7 @@ function App() {
         title: "King of the Ring",
         date: "April 2023 - June 2023",
         link: "https://coleyoung02.itch.io/king-of-the-ring",
-        images: [KoR1, KoR2, KoR3],
+        images: [KoR3, KoR2],
         role: "UX/UI",
         teamsize: "8",
         short: `A chess-boxing game set against a particular billionare an especially punchable face.`,
