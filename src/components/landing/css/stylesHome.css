@@ -30,7 +30,7 @@
     font-family: 'Lexend Zetta', sans-serif;
     letter-spacing: -5px;
 
-    color: white;
+    color:#E94F37;
     font-size: 60px;
 }
 
@@ -250,6 +250,7 @@ p{
     z-index: 1;
 
     width: 80vw;
+    color: white;
 
     display: flex;
     flex-direction: row;
@@ -290,10 +291,15 @@ p{
 }
 
 .customCarousel .description {
+    position: absolute;
     background-color: #1B1D1F;
     color: #ffffff;
-    margin-left: 1vw;
+
+    margin-right: 10vw;
+    right: 0;
     padding: 1vw;
+
+    width: 24vw;
 
 
     height: fit-content;
@@ -334,6 +340,7 @@ p{
     width: 100vw;
     z-index: 2;
     margin-top: 1vh;
+    cursor: pointer;
 }
 
 .leftToRightText{
@@ -503,6 +510,7 @@ p{
 .contactBackground .sectionHeading {
     align-self: flex-start;
     padding-left: 5vw;
+    color: white;
 }
 
 .contactBackground .headingBar{

@@ -17,7 +17,11 @@ const Projects = ({
         projectsList
     }: Props) =>{
 
-
+    function nextCard(){
+        if (index != (projectsList.length - 1)){
+            updateIndex(index + 1)
+        }
+    }
 
     let project = projectsList[index]
 
@@ -55,7 +59,7 @@ const Projects = ({
                 </div>
             </div>
 
-            <div className="scrollingBackground">
+            <div className="scrollingBackground" onClick={() => nextCard()}>
                 <div className="leftToRightText">
                     <div className="scrollingItem">
                     CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt;
