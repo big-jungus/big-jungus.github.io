@@ -8,25 +8,22 @@ import "./css/stylesHome.css"
 import { useEffect } from "react";
 
 type Props = {
+    index: number,
     getProjects: boolean,
     setProjects: (flag: boolean) => void,
-    updateIndex: (index: number) => void;
+    updateIndex: (index: number) => void,
+    projectsList: { id: number; title: string; date: string; link: string; images: string[]; description: string; short: string; }[],
+    getSplash: boolean;
 }
 
 const Landing = ({
+        index,
         getProjects,
         setProjects,
-        updateIndex
+        updateIndex,
+        projectsList,
+        getSplash
     }: Props) => {
-
-    // useEffect(() => {
-    //    // on first page load, play an animation
-    //         // use css to set splash display: visible (?) 
-    //         // use css to set page content display: none
-    //     // when animation is done
-    //         // use css to set splash display: none 
-    //         // use css to set page content display: visible (?)
-    // }, [])
 
     useEffect(() => {
         if (getProjects){
@@ -37,14 +34,25 @@ const Landing = ({
     }, [getProjects])
 
     return (
-        <>  
-            <div className="page-container">
+        <div>
+            <div className="pageBar"/>
+            <div className="background">
+                <div className="scrollingArrows">
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                </div>
+            </div>
+            <div className={(getProjects)?"page-container noScroll":"page-container"}>
                 <About />
-                <ProjectsRecent setProjects={setProjects} updateIndex={updateIndex}/>
+                <ProjectsRecent index={index} setProjects={setProjects} updateIndex={updateIndex} projectsList={projectsList}/>
                 <Experience />
                 <Contact />
             </div>
-        </>
+        </div>
       );
 }
 

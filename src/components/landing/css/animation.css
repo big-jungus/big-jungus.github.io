@@ -20,216 +20,7 @@
 
 .centerLine {
     opacity: 0;
-    animation: centerLine 5s 1;
-}
-
-@keyframes centerLine {
-    /*First Blink*/
-    19% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-    21% {
-        opacity: 0;
-    }
-
-    /*Second Blink*/
-    22% {
-        opacity: 0;
-    }
-    23% {
-        opacity: 1;
-    }
-    24% {
-        opacity: 0;
-    }
-
-    /*Third Blink*/
-    25% {
-        opacity: 0;
-    }
-    26% {
-        opacity: 1;
-    }
-    27% {
-        opacity: 0;
-    }
-
-    /*Final Blink*/
-    28% {
-        opacity: 0;
-    }
-    29% {
-        opacity: 1;
-    }
-
-    90% {
-        opacity: 1;
-    }
-}
-
-.leftDot{
-    opacity: 0;
-    animation: leftDot 5s 1;
-}
-
-@media (max-width: 900px) {
-    .leftDot {
-        animation: leftDotPhone 5s 1;
-    }
-}
-
-@keyframes leftDot {
-    8% {
-        opacity: 0;
-        left: 40vw;
-    }
-
-    9% {
-        opacity: 1;
-        left: 40vw;
-    }
-
-    12% {
-        opacity: 1;
-        left: 40vw;
-    }
-    
-    13% {
-        opacity: 1;
-        left: 40vw;
-    }
-
-    19% {
-        left: 28.5vw;
-    }
-
-    90%{
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        left: 28.5vw;
-    }
-}
-
-@keyframes leftDotPhone {
-    8% {
-        opacity: 0;
-        left: 40vw;
-    }
-
-    9% {
-        opacity: 1;
-        left: 40vw;
-    }
-
-    12% {
-        opacity: 1;
-        left: 40vw;
-    }
-    
-    13% {
-        opacity: 1;
-        left: 40vw;
-    }
-
-    19% {
-        left: 12vw;
-    }
-
-    90%{
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        left: 12vw;
-    }
-}
-
-.rightDot{
-    opacity: 0;
-    animation: rightDot 5s 1;
-}
-
-@media (max-width: 900px) {
-    .rightDot {
-        animation: rightDotPhone 5s 1;
-    }
-}
-
-@keyframes rightDot {
-    8% {
-        opacity: 0;
-        right: 40vw;
-    }
-
-    9% {
-        opacity: 1;
-        right: 40vw;
-    }
-
-    12% {
-        opacity: 1;
-        right: 40vw;
-    }
-    
-    13% {
-        opacity: 1;
-        right: 40vw;
-    }
-
-    19% {
-        right: 28.5vw;
-    }
-
-    90%{
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        right: 28.5vw;
-    }
-}
-
-@keyframes rightDotPhone {
-    8% {
-        opacity: 0;
-        right: 40vw;
-    }
-
-    9% {
-        opacity: 1;
-        right: 40vw;
-    }
-
-    12% {
-        opacity: 1;
-        right: 40vw;
-    }
-    
-    13% {
-        opacity: 1;
-        right: 40vw;
-    }
-
-    19% {
-        right: 12vw;
-    }
-
-    90%{
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        right: 12vw;
-    }
+    animation: h1Text 5s 1;
 }
 
 .h1Text{
@@ -238,29 +29,26 @@
 }
 
 @keyframes h1Text {
-    22% {
+    17%{
         opacity: 0;
-        letter-spacing: -1vw;
     }
 
-    24% {
+    22% {
         opacity: 1;
-    }
-
-    30% {
-        opacity: 1;
-        letter-spacing: 1.5vw;
     }
 
     90% {
         opacity: 1;
-        letter-spacing: 1.5vw;
     }
 
     100% {
         opacity: 0;
-        letter-spacing: 1.5vw;
     }
+}
+
+.devLine {
+    opacity: 0;
+    animation: h2Text 5s 1;
 }
 
 .h2Text{
@@ -269,28 +57,20 @@
 }
 
 @keyframes h2Text {
-    32% {
+    32%{
         opacity: 0;
-        letter-spacing: -1vw;
     }
-
-    34% {
+    
+    39% {
         opacity: 1;
-    }
-
-    43% {
-        opacity: 1;
-        letter-spacing: 1.25vw;
     }
 
     90% {
         opacity: 1;
-        letter-spacing: 1.25vw;
     }
 
     100% {
         opacity: 0;
-        letter-spacing: 1.25vw;
     }
 }
 
@@ -300,11 +80,11 @@
 }
 
 @keyframes progressText {
-    34% {
+    36% {
         opacity: 0;
     }
 
-    35% {
+    37% {
         opacity: 1;
     }
 
@@ -334,60 +114,23 @@
     }
 }
 
-.loadingText::after {
-    opacity: 0;
-    content: "LOADING.......";
-
-    animation: loadingText 5s 1;
+.progressWrapper {
+    background-color: rgba(0, 0, 0, 0);
+    animation: progressWrapper 5s 1;
 }
 
-@keyframes loadingText {
+@keyframes progressWrapper {
     29% {
-        opacity: 0;
-        content: "LOADING.......";
-        letter-spacing: -.5vw;
+        background-color: rgba(0, 0, 0, 0);
     }
-
-    30% {
-        opacity: 1;
-    }
-
     35% {
-        letter-spacing: 0.15vw;
+        background-color: #0D0D0D;
     }
-
-    55% {
-        letter-spacing: 0.15vw;
-    }
-    75% {
-        opacity: 1;
-        content: "LOADING.......";
-        letter-spacing: 0.15vw;
-    }
-    76% {
-        opacity: 0;
-        letter-spacing: -.25vw;
-        content: "COMPLETE.......";
-    }
-    78% {
-        opacity: 0;
-    }
-    79% {
-        opacity: 1;
-        content: "COMPLETE.......";
-    }
-    84% {
-        letter-spacing: 0.15vw;
-    }
-
     90% {
-        opacity: 1;
+        background-color: #0D0D0D;
     }
-
     100% {
-        opacity: 0;
-        content: "COMPLETE.......";
-        letter-spacing: 0.15vw;
+        background-color: rgba(0, 0, 0, 0);
     }
 }
 
@@ -405,26 +148,18 @@
 @keyframes progressBar {
     29% {
         opacity: 0;
-        
     }
-    30% {
+    35% {
         opacity: 1;
         width: 0vw;
     }
-    77% {
-        opacity: 1;
-        width: 33vw;
-    }
-    78% {
-        opacity: 1;
-    }
-
     90% {
         opacity: 1;
+        width: 100%;
     }
     100% {
         opacity: 0;
-        width: 33vw
+        width: 100%;
     }
 }
 

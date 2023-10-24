@@ -1,4 +1,4 @@
-import me from '/images/me.png';
+import me from '/images/me2.png';
 import "./css/stylesHome.css"
 
 
@@ -6,13 +6,9 @@ function About() {
     return(
         <div className="aboutBackground">
             <div className="anchor" id="about"/>
+            <div className="headingBar"/>
             <h1 className="sectionHeading aboutHeading">ABOUT ME</h1>
-
-            <div className="aboutTopBorder" />
             <div className="aboutWrapper">
-                <div className="aboutPictureWrapper">
-                    <img className="aboutPicture" src={me} />
-                </div>
                 <div>
                     <p className="aboutParagraph">
                         I'm currently a senior at UC Irvine, majoring in Game Design and Interactive Media, with experience in Unity, Unreal, C#, C++, and Python. I find combat systems in games to be especially interesting, and have been creating games for a variety of genres. <br/><br/>
@@ -21,8 +17,8 @@ function About() {
                         I aim to push the boundaries on gaming, creating new gameplay experiences that inspire gamers and developers alike!
                     </p>    
                 </div>
+                <img className="aboutPicture" src={me}/>
             </div>
-            <div className="aboutBotBorder" />
             <div className="padding"/>
         </div>
     );

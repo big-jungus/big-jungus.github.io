@@ -8,15 +8,19 @@
     background-color: black;
 }
 
+.splashWrapper {
+
+    margin-top: 10%;
+
+    display: flex;
+    flex-direction: column; 
+
+    transform: rotate(-5deg);
+}
+
 .centerLine {
-    position: absolute;
-
-    height: 3px;
-    width: 40vw;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 105vw;
 
     background-color: white;
 }
@@ -27,98 +31,61 @@
     }
 }
 
-.leftDot {
-    position: absolute;
-
-    height: 7px;
-    width: 7px;
-
-    top: 50%;
-    left: 40vw;
-    transform: translateY(-50%);
-
-    background-color: white;
-}
-
-.rightDot {
-    position: absolute;
-
-    height: 7px;
-    width: 7px;
-
-    top: 50%;
-    right: 40vw;
-    transform: translateY(-50%);
-
-    background-color: white;
-}
-
 .h1Text {
-    position: absolute;
-
-    letter-spacing: -1vw;
-    text-align: center;
-    width: 100%;
-
-    top: 47vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: left;
 
     color: white;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 7vw;
+    letter-spacing: -10px;
+    margin-left: 2vw;
+}
+
+.devLine {
+    height: 7px;
+    width: 65vw;
+    align-self: flex-end;
+    background-color: white;
+    margin-right: -5vw;
 }
 
 .h2Text {
-    position: absolute;
-
-    letter-spacing: -1vw;
-    text-align: center;
-    width: 100%;
-
-    top: 53vh;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    text-align: right;
 
     color: white;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 5vw;
+    letter-spacing: -8px;
+}
+
+.progressWrapper {
+    position: relative;
+    margin-left: -5vw;
+    margin-top: 5vh;
+    width: 110vw;
+    height: 30vh;
+    background-color: #0D0D0D;
 }
 
 .progressText {
     position: absolute;
 
-    font-size: 1vw;
+    transform: translateY(-100%);
+    margin-right: 5vw;
 
-    top: 64vh;
-    right: 34vw;
-    transform: translate(-50%, -50%);
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 25vh;
+    
+    right: 0;
 
-    color: white;
-}
-
-.loadingText {
-    position: absolute;
-
-    text-align: left;
-    font-size: 1vw;
-
-    top: 64vh;
-    left: 33.75vw;
-
-    transform: translateY(-50%);
-
-    color: white;
+    color: #282828;
 }
 
 .progressBar {
-    position: absolute;
+    height: 100%;
+    width: 100%;
 
-    top: 64vh;
-    left: 33vw;
-    
-    height: 1.5vw;
-    width: 30vw;
-
-    transform: translateY(-50%);
-
-    background-color: gray;
+    background-color: #151515;
 }
 
 @media (max-width: 900px) {

@@ -1,0 +1,60 @@
+.selectorWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vw;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+
+.activeProject {
+    background-color: #E94F37;
+    width: 2vw;
+    height: 2vh;
+    
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+
+    margin: 0 0.5vw 0 0.5vw;
+
+    transform: translateY(25%);
+}
+
+.inactiveProject {
+
+    width: 2vw;
+    height: 2vh;
+
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(82, 82, 82);
+
+    cursor: pointer;
+
+    margin: 0 0.5vw 0 0.5vw;
+
+    transform: translateY(25%);
+}
+
+.selectorButton{
+    height: 3vh;
+    border-radius: 0;
+    background-color:#E94F37;
+}
+
+.selectorButton:hover{
+    background-color: #ca523f;
+}
+
+.selectorButton p{
+    font-family: 'Lexend Zetta', sans-serif;
+    margin-top: -50%;
+}
+
+.right {
+    margin-left: 0.5vw;
+}
+
+.left {
+    margin-right: 0.5vw;
+}

@@ -8,6 +8,7 @@ function Contact(){
     return(
         <div className="contactBackground">
             <div className="anchor" id="contact"/>
+            <div className="headingBar"/>
             <h1 className="sectionHeading">CONTACT</h1>
 
             <div className="contactImagesContainer">

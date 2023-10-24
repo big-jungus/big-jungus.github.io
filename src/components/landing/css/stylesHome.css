@@ -6,27 +6,41 @@
     align-items: center;
     row-gap: 5vh;
 
-    background-image: url(/images/gridbackground.jpg);
-    background-size: 10%;
-    background-attachment: fixed;
+    background-color: #000000;
+}
+
+.noScroll {
+    overflow: hidden; 
+}
+
+.pageBar{
+    position: fixed;
+    z-index: 1;
+
+    top: -5vh;
+    width: 10px;
+    height: 110vh;
+    background-color: #ffffff;
 }
 
 .sectionHeading {
     text-align: center;
 
     order: 0;
-
-    padding: 2vh 0 2vh 0;
+    font-family: 'Lexend Zetta', sans-serif;
+    letter-spacing: -5px;
 
     color: white;
-    font-size: 40px;
-    font-weight: 700;
+    font-size: 60px;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
+p{
+    font-size: 18px;
+}
 
 .anchor {
     position: relative;
@@ -39,24 +53,52 @@ html {
     padding: 0 0 5vh 0;
 }
 
-.standardTopBorder { 
-    height: 2vh;
-    width: 100%;
+.background {
+    z-index: 0;
+    position: fixed;
+    background-color: #0D0D0D;
 
-    border: solid;
-    border-color: white;
-    border-width: 1px 1px 0 1px;
+    margin-left: 10vw;
+    margin-top: -20vh;
+    width: 60vw;
+    height: 120vh;
+
+    align-self: center;
+
+    transform: rotate(-5deg);
 }
 
-.standardBotBorder {
-    height: 2vh;
-    width: 100%;
+.scrollingArrows{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
-    border: solid;
-    border-color: white;
-    border-width: 0 1px 1px 1px;
+    margin-left: 6.5vw;
 }
 
+.arrow {
+    z-index: 0;
+    width: 0; 
+    height: 0; 
+
+    margin: 5vh;
+
+    border-left: 20vw solid transparent;
+    border-right: 20vw solid transparent;
+    
+    border-top: 10vw solid #282828;
+
+    animation: TopToBottom 3s infinite linear;
+}
+
+@keyframes TopToBottom {
+    from {
+        transform: translateY(-20%);
+    }
+    to {
+        transform: translateY(159%);
+    }
+}
 
 
 /*NavBar*/
@@ -66,13 +108,13 @@ html {
 
     color: white;
     font-size: 15px;
-    font-weight: 400;
-    background-color: rgba(0, 0, 0, 0.35) !important;
+    font-family: 'Lexend Zetta', sans-serif;
+    background-color: #0D0D0D !important;
 }
 
 .navbar-brand {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 45px;
+    font-family: 'Saira', sans-serif;
     cursor: pointer;
 }
 
@@ -114,46 +156,28 @@ html {
 /*About*/
 .aboutBackground {
     order: 1;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
 
-    align-items: center;
-
-    padding: 0 2vw 0 2vw;
     width: 80vw;
-
-    border: solid;
-    border-color: white;
-    border-width: 1px;
-
-    background-color: rgba(100, 100, 100, 0.85);
+    min-height: 70vh;
+    margin-top: 10vh;
 }
 
 .aboutHeading {
     position: relative;
-    opacity: 0;
-    scale: 0.8;
+    align-self: flex-end;
 
-    overflow: hidden;
     max-width: fit-content;
     white-space: nowrap;
-    margin: 0 auto;
-    
-    animation: 
-    headingLoad 1s 0.75s;
-    animation-fill-mode: forwards;
 }
 
-@keyframes headingLoad {
-    from {
-        opacity: 0;
-        scale: 0.8;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
+.aboutBackground .headingBar {
+    height: 10px;
+    width: 100%;
+    background-color: #ffffff;
 }
 
 .aboutWrapper {
@@ -161,129 +185,30 @@ html {
     flex-direction: row;
     flex: 1;
 
-    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    margin-top: -2.5vh;
+    margin-left: 1vw;
+    padding: 0 0.5vw 0.5vw 0.5vw;
 }
 
 .aboutPicture {
     order: 0;
 
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 
-    opacity: 0;
-
-    border: solid;
-    border-color: white;
-    border-width: 1px;
-
-    margin: 0 1vh 0 1vh;
-
-    animation: aboutPictureAnimation 0.3s 3.25s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes aboutPictureAnimation {
-    0% {
-        opacity: 0;
-        scale: 0.9;
-    }
-    100% {
-        opacity: 1;
-        scale: 1;
-    }
+    box-shadow: 15px 15px #E94F37;
 }
 
 .aboutParagraph {
-    order: 1;
+    order: 0;
     flex: 1;
 
-    /*
-    background: linear-gradient(to top,
-        rgba(255,255,255, 0) 100%, 
-        rgba(255,255,255, 1) 100%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    */
-
-    margin: 0.5vh 1vw 0 1vw;
+    padding: 2vh 2vw 3vh 2vw;
+    margin-top: -2vh;
+    margin-right: -1vw;
 
     color: white;
-    scale: 0.6;
-    opacity: 0;
-
-    animation: paragraph 0.5s 2.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes paragraph {
-    from {
-        scale: 0.6;
-        opacity: 0;
-    }
-    to {
-        scale: 1;
-        opacity: 1;
-    }
-}
-
-.aboutTopBorder {
-    height: 2vh;
-    width: 0%;
-
-    border: solid;
-    border-color: white;
-    border-width: 0;
-
-    animation: topBorderAnimation 1.25s 1.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes topBorderAnimation {
-    0% {
-        width: 0%;
-        border-width: 1px 0 0 0;
-    }
-
-    50% {
-        width: 100%;
-        border-width: 1px 0 0 0;
-    }
-
-    100% {
-        width: 100%;
-        border-width: 1px 1px 0 1px;
-    }
-}
-
-.aboutBotBorder {
-    height: 2vh;
-    width: 0%;
-
-    border: solid;
-    border-color: white;
-    border-width: 0;
-
-    animation: botBorderAnimation 1.25s 1.5s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes botBorderAnimation {
-    0% {
-        width: 0%;
-        border-width: 0 0 1px 0;
-    }
-
-    50% {
-        width: 100%;
-        border-width: 0 0 1px 0;
-    }
-
-    100% {
-        width: 100%;
-        border-width: 0 1px 1px 1px;
-    }
+    background-color: #1B1D1F;
 }
 
 @media (max-width: 900px) {
@@ -313,16 +238,30 @@ html {
     flex-direction: column;
 
     width: 80vw;
+    min-height: 70vh;
+    margin-top: 10vh;
 
     align-items: center;
+}
 
-    padding: 0 2vw 0 2vw;
+.projectsBackground .sectionHeading {
+    align-self: flex-start;
+    padding-left: 5vw;
+    z-index: 1;
 
-    border: solid;
-    border-color: white;
-    border-width: 1px;
+    width: 80vw;
 
-    background-color: rgba(100, 100, 100, 0.85);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.projectsBackground .headingBar{
+    align-self: flex-start;
+    z-index: 2;
+    height: 10px;
+    width: 50%;
+    background-color: #ffffff;
 }
 
 .recentProjects {
@@ -336,6 +275,93 @@ html {
     padding-bottom: 1vh;
 }
 
+.projectsBackground .customCarousel{
+    align-self: flex-start;
+    padding-left: 5vw;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.carouselImage{
+    width: 50vw;
+    height: 28vw;
+}
+
+.customCarousel .description {
+    background-color: #1B1D1F;
+    color: #ffffff;
+    margin-left: 1vw;
+    padding: 1vw;
+
+
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.descriptionHeader {
+    font-size: 30px;
+    font-family: 'Lexend Zetta', sans-serif;
+    letter-spacing: -5px;
+    text-transform: uppercase;
+}
+
+.descriptionText {
+    font-size: 15px;
+    padding: 0 1vw 0 1vw;
+}
+
+.galleryButton {
+    align-self: center;
+    width: 90%;
+
+    font-family: 'Lexend Zetta', sans-serif;
+    letter-spacing: -3px;
+    background-color: #E94F37;
+
+    border: none;
+    border-radius: 0;
+}
+
+.galleryButton:hover{
+    background-color: #ca523f;
+}
+
+.scrollingBackground{
+    background-color: #E94F37;
+    width: 100vw;
+    z-index: 2;
+    margin-top: 1vh;
+}
+
+.leftToRightText{
+    font-size: 35px;
+    letter-spacing: -5px;
+    font-family: 'Lexend Zetta', sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.scrollingItem {
+    white-space: nowrap;
+    animation: LeftToRight 30s infinite linear;
+}
+
+@keyframes LeftToRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 @media (max-width: 1200px) {
     .recentProjects {
         flex-direction: column;
@@ -343,63 +369,60 @@ html {
     }
 }
 
-.moreProjects {
-    text-align: center;
-
-    order: 3;
-    border-radius: 0;
-}
-
-.projectsTopBorder {
-    order: 1;
-    border-width: 1px 1px 0 1px;
-    width: 100%;
-}
-
-.projectsBotBorder {
-    order: 4;
-}
-
 
 
 /*Experience*/
 .experienceBackground {
     order: 3;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
 
     width: 80vw;
+    min-height: 70vh;
+    margin-top: 10vh;
+}
 
-    border: solid;
-    border-color: white;
-    border-width: 1px;
+.experienceBackground .headingBar{
+    height: 10px;
+    width: 100%;
+    background-color: #ffffff;
+}
 
-    padding: 1vh 1vw 1vh 1vw;
+.experienceHeading {
+    position: relative;
+    align-self: flex-end;
 
-    background-color: rgba(100, 100, 100, 0.85);
+
+    max-width: fit-content;
+    white-space: nowrap;
+}
+
+.experienceSection {
+    display: flex;
+    flex-direction: row;
 }
 
 .experienceHeader {
     display: flex;
-    flex-direction: row;
-    align-self: center;
-    max-width: 70%;
+    flex-direction: column;
+    z-index: 1;
 
-    padding: 1vh 1vw 1vh 1vw;
+    padding: 0 0 0 4vw;
+
+    white-space: nowrap;
 }
 
 .experienceCompany {
     align-self: center;
-    font-size: 70px;
+    font-size: 50px;
+    font-family: 'Lexend Zetta', sans-serif;
+    letter-spacing: -5px;
+
     color: white;
 
     cursor: pointer;
-}
-
-.experienceHeader div {
-    transform: translateY(12.5%);
-    padding-left: 4vw;
 }
 
 .experiencePos {
@@ -415,27 +438,21 @@ html {
 .experienceBackground ul {
     list-style-type: square;
     align-self: center;
-    max-width: 50%;
+
+    margin-top: 3vh;
+    margin-left: -10vw;
+
+    padding: 4vh 4vw 6vh 15vw;
+
+    background-color: #1B1D1F;
 }
 
 .experienceBackground li {
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
-    font-size: 18px;
+    font-size: 18px; 
     color: white;
-}
-
-.experienceBackground .standardBotBorder {
-    align-self: center;
-    width: 60%;
-    border-width: 0 1px 1px 1px;
-}
-
-.experienceBackground .standardTopBorder {
-    align-self: center;
-    width: 60%;
-    border-width: 1px 1px 0 1px;
 }
 
 @media (max-width: 1200px) {
@@ -474,18 +491,25 @@ html {
 /*Contact*/
 .contactBackground {
     order: 4;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     width: 80vw;
+}
 
-    border: solid;
-    border-color: #ffffff;
-    border-width: 1px;
+.contactBackground .sectionHeading {
+    align-self: flex-start;
+    padding-left: 5vw;
+}
 
-    background-color: rgba(100, 100, 100, 0.85);
+.contactBackground .headingBar{
+    align-self: flex-start;
+    height: 10px;
+    width: 50%;
+    background-color: #ffffff;
 }
 
 .contactImagesContainer {
