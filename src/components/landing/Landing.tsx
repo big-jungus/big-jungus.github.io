@@ -13,7 +13,6 @@ type Props = {
     setProjects: (flag: boolean) => void,
     updateIndex: (index: number) => void,
     projectsList: { id: number; title: string; date: string; link: string; images: string[]; description: string; short: string; }[],
-    getSplash: boolean;
 }
 
 const Landing = ({
@@ -22,7 +21,6 @@ const Landing = ({
         setProjects,
         updateIndex,
         projectsList,
-        getSplash
     }: Props) => {
 
     useEffect(() => {

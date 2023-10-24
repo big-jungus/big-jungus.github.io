@@ -3,16 +3,12 @@ import "./css/animation.css"
 import "./css/stylesHome.css"
 import "./css/stylesSplash.css"
 
-import { useEffect } from "react";
-
 type Props = {
     setSplash: (flag: boolean) => void,
-    getSplash:  boolean;
 }
 
 const Splash = ({
     setSplash,
-    getSplash
 }: Props) => {
     
     return(

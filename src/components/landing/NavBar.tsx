@@ -10,7 +10,6 @@ type Props = {
 }
 
 const NavBar = ({
-    getProjects,
     setProjects
   }: Props) => {
 
@@ -19,15 +18,6 @@ const NavBar = ({
       setProjects(false);
       document.getElementById(id)?.scrollIntoView();
     }
-
-    function ToggleProjects(){
-      if (getProjects){
-        setProjects(false)
-      }else{
-        setProjects(true)
-      }
-    }
-
 
   return (
     <Navbar expand={true} className="navBarBackground" sticky="top" variant='dark'>

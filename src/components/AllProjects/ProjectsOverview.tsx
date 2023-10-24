@@ -4,14 +4,12 @@ import { Button } from 'react-bootstrap';
 
 type Props = {
     index: number;
-    updateIndex: (index: number) => void,
     setProjects: (flag: boolean) => void,
     projectsList: { id: number; title: string; date: string; link: string; images: string[]; description: string; role: string; teamsize: string; }[];
 }
 
 const ProjectsOverview = ({
         index,
-        updateIndex,
         setProjects,
         projectsList
     }: Props) => {

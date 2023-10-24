@@ -170,14 +170,13 @@ function App() {
     return (
         <>  
             <div className={(!splashState)?"page-container noScroll":"page-container"}>
-                {!splashState && <Splash setSplash={setSplash} getSplash={splashState}/>}
+                {!splashState && <Splash setSplash={setSplash}/>}
                 {splashState && <NavBar 
                     getProjects={projectsState} 
                     setProjects={setProjects}/>}
 
                 {projectsState && <ProjectsOverview 
                                         index={activeIndex} 
-                                        updateIndex={setActiveIndex}
                                         setProjects={setProjects}
                                         projectsList={projectsList} />}
 
@@ -186,8 +185,7 @@ function App() {
                     getProjects={projectsState} 
                     setProjects={setProjects} 
                     updateIndex={setActiveIndex}
-                    projectsList={projectsList}
-                    getSplash={splashState} />
+                    projectsList={projectsList} />
             </div>
         </>
     );
