@@ -1,6 +1,8 @@
 import { Carousel, Button } from "react-bootstrap";
 import Selector from "../CustomCarousel/CarouselSelector";
 
+import arrows from "/elements/arrows.svg"
+
 import "./css/stylesHome.css"
 
 type Props = {
@@ -62,7 +64,7 @@ const Projects = ({
             <div className="scrollingBackground" onClick={() => nextCard()}>
                 <div className="leftToRightText">
                     <div className="scrollingItem">
-                    CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt; CHECK OUT MORE &gt;
+                    CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/>
                     </div>
                 </div>
             </div>

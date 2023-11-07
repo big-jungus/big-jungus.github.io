@@ -36,25 +36,25 @@
     transform: translateY(25%);
 }
 
-.selectorButton{
-    height: 3vh;
-    border-radius: 0;
-    background-color:#E94F37;
-}
-
 .selectorButton:hover{
-    background-color: #ca523f;
+    filter: invert(46%) sepia(73%) saturate(1711%) hue-rotate(332deg) brightness(101%) contrast(84%);
 }
 
-.selectorButton p{
-    font-family: 'Lexend Zetta', sans-serif;
-    margin-top: -50%;
+.selectorButton:active{
+    filter: invert(38%) sepia(53%) saturate(767%) hue-rotate(321deg) brightness(96%) contrast(91%);
 }
 
 .right {
+    filter: invert(32%) sepia(47%) saturate(2932%) hue-rotate(344deg) brightness(106%) contrast(83%);
+    margin-top: 0.25vh;
+    height: 2.5vh;
     margin-left: 0.5vw;
 }
 
 .left {
+    transform: scaleX(-1);
+    filter: invert(32%) sepia(47%) saturate(2932%) hue-rotate(344deg) brightness(106%) contrast(83%);
+    margin-top: 0.25vh;
+    height: 2.5vh;
     margin-right: 0.5vw;
 }

@@ -1,5 +1,7 @@
 import { Button } from "react-bootstrap";
 
+import arrow from "/elements/right_arrow.svg"
+
 import "./Carousel.css"
 
 type Props = {
@@ -33,9 +35,9 @@ const Selector = ({
 
     return(
         <div className="selectorWrapper">
-            <Button className="selectorButton left" onClick={() => handleSelect(false)} variant="dark"><p>&lt;</p></Button>
+            <img className="selectorButton left" src={arrow} onClick={() => handleSelect(false)} />
             {projectsID}
-            <Button className="selectorButton right" onClick={() => handleSelect(true)} variant="dark"><p>&gt;</p></Button>
+            <img className="selectorButton right" src={arrow} onClick={() => handleSelect(true)} />
         </div>
     );
 }

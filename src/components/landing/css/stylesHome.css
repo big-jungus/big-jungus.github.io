@@ -357,7 +357,12 @@ p{
 
 .scrollingItem {
     white-space: nowrap;
+    padding: 0.25vw;
     animation: LeftToRight 30s infinite linear;
+}
+
+.scrollingItem img {
+    padding-bottom: 0.5vw;
 }
 
 @keyframes LeftToRight {
