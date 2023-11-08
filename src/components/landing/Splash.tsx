@@ -22,12 +22,8 @@ const Splash = ({
                 <div className="progressWrapper">
                     <div className="progressBar" />
                     <h3 className="progressText"><CountUp start={0} end={100} duration={2.45} delay={1.85}/></h3>
-                </div>
-                
+                </div>    
             </div>
-        
-            
-            
         </div>
     );
 }
