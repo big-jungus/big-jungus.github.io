@@ -6,6 +6,13 @@
     margin-top: 3vh;
 }
 
+@media (max-width: 1000px){
+    .selectorWrapper{
+        margin-top: 0;
+        padding-bottom: 2vh;
+    }
+}
+
 .activeProject {
     background-color: #E94F37;
     width: 2vw;
