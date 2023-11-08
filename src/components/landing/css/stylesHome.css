@@ -37,6 +37,7 @@
 @media (max-width: 500px){
     .pageBar{
         height: 150vh;
+        width: 5px;
     }
     
     .sectionHeading{
@@ -90,8 +91,8 @@ p{
     z-index: 0;
     width: 0; 
     height: 0; 
-
-    margin: 5vh;
+    padding-bottom: 20vh;
+    margin-left: 3vw;
 
     border-left: 20vw solid transparent;
     border-right: 20vw solid transparent;
@@ -99,6 +100,12 @@ p{
     border-top: 10vw solid #282828;
 
     animation: TopToBottom 10s infinite linear;
+}
+
+@media(max-width: 1000px){
+    .arrow{
+        animation: TopToBottom 12s infinite linear;
+    }
 }
 
 @keyframes TopToBottom {
@@ -236,6 +243,11 @@ p{
     .aboutPicture {
         margin-bottom: 1vh;
     }
+
+    .aboutBackground{
+        min-height: 50vh;
+        margin-top: 5vh;
+    }
 }
 
 @media (max-width: 500px){
@@ -245,6 +257,14 @@ p{
     }
     .aboutParagraph{
         font-size: 12px;
+    }
+
+    .aboutBackground{
+        margin-top: 0;
+    }
+
+    .aboutBackground .headingBar{
+        height: 5px;
     }
 }
 
@@ -291,18 +311,7 @@ p{
     background-color: #ffffff;
 }
 
-.recentProjects {
-    order: 2;
-
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 1vh;
-}
-
-.projectsBackground .customCarousel{
+.customCarousel{
     align-self: flex-start;
     padding-left: 5vw;
     z-index: 0;
@@ -326,8 +335,8 @@ p{
     padding: 1vw;
 
     width: 24vw;
+    height: 28vw;
 
-    height: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -337,12 +346,6 @@ p{
     font-family: 'Lexend Zetta', sans-serif;
     letter-spacing: -5px;
     text-transform: uppercase;
-}
-
-@media (max-width: 1000px){
-    .descriptionHeader{
-        font-size: 20px;
-    }
 }
 
 .descriptionText {
@@ -360,6 +363,9 @@ p{
 
     border: none;
     border-radius: 0;
+
+    position: absolute;
+    bottom: 1vw;
 }
 
 .galleryButton:hover{
@@ -418,11 +424,36 @@ p{
     .scrollingBackground{
         margin-top: 3vh;
     }
+
+    .descriptionHeader{
+        font-size: 20px;
+    }
+
+    .projectsBackground{
+        min-height: 50vh;
+        margin-top: 5vh;
+    }
 }
 
 @media (max-width: 500px){
-    .projectsBackground .customCarousel{
+    .customCarousel{
         flex-direction: column;
+    }
+
+    .customCarousel .description{
+        position: relative;
+        margin-top: 1vh;
+        width: 100%;
+        height: 22vh;
+    }
+
+    .customCarousel .carouselImage{
+        width: 75vw;
+        height: 42vw;
+    }
+
+    .projectsBackground .headingBar{
+        height: 5px;
     }
 }
 
@@ -520,6 +551,11 @@ p{
         margin-top: 0;
         padding: 4vh 4vh 6vh 6vh;
     }
+
+    .experienceBackground{
+        min-height: 50vh;
+        margin-top: 5vh;
+    }
 }
 
 @media (max-width: 500px){
@@ -539,6 +575,10 @@ p{
 
     .experienceBackground li {
         font-size: 12px;
+    }
+
+    .experienceBackground .headingBar{
+        height: 5px;
     }
 }
 
@@ -580,6 +620,10 @@ p{
 @media (max-width: 500px){
     .contactImagesContainer{
         margin-left: 10vw;
+    }
+
+    .contactBackground .headingBar{
+        height: 5px;
     }
 }
 

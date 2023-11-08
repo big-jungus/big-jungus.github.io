@@ -1,5 +1,3 @@
-import { Button } from "react-bootstrap";
-
 import arrow from "/elements/right_arrow.svg"
 
 import "./Carousel.css"

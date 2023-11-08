@@ -44,7 +44,7 @@ const Projects = ({
             
 
             <div className="customCarousel">
-                <Carousel className="carousel" activeIndex={index} interval={null} controls={false} indicators={false}>
+                <Carousel activeIndex={index} interval={null} controls={false} indicators={false}>
                         {projectsImage}
                 </Carousel>
                     
