@@ -25,7 +25,7 @@ const NavBar = ({
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Nav className="customNav" justify={true} fill={true}>
           <Navbar.Brand onClick={() => NavNavigation("about")}>MJ</Navbar.Brand>
-          <Nav.Link onClick={() => NavNavigation("about")}>ABOUT ME</Nav.Link>
+          <Nav.Link onClick={() => NavNavigation("about")}>ABOUT</Nav.Link>
           <Nav.Link onClick={() => NavNavigation("recent")}>PROJECTS</Nav.Link>
           <Nav.Link onClick={() => NavNavigation("experience")}>EXPERIENCE</Nav.Link>
           <Nav.Link onClick={() => NavNavigation("contact")}>CONTACT</Nav.Link>
