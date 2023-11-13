@@ -168,7 +168,7 @@ function App() {
     const [splashState, setSplash] = useState(false);
 
     return (
-        <>  
+        <div style={{backgroundColor: "black"}}>  
             <div className={(!splashState)?"page-container noScroll":"page-container"}>
                 {!splashState && <Splash setSplash={setSplash}/>}
                 {splashState && <NavBar 
@@ -187,7 +187,7 @@ function App() {
                     updateIndex={setActiveIndex}
                     projectsList={projectsList} />
             </div>
-        </>
+        </div>
     );
 }
 export default App;
