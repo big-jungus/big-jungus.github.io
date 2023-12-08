@@ -7,7 +7,7 @@ function About() {
         <div className="aboutBackground">
             <div className="anchor" id="about"/>
             <div className="headingBar"/>
-            <h1 className="sectionHeading aboutHeading">ABOUT ME</h1>
+            <h1 className="sectionHeading aboutHeading">ABOUT</h1>
             <div className="aboutWrapper">
                 <div>
                     <p className="aboutParagraph">
