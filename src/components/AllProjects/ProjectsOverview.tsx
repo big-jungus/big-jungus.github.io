@@ -17,11 +17,9 @@ const ProjectsOverview = ({
     let project = projectsList[index]
 
     const projectsImage = project.images.map(image =>
-        <a className={(project.id == 7)?"":"inactiveLink"} href={(project.id == 7)?project.link:""} target="_blank">
+        <a href={project.link} target="_blank">
             <img className={"images"} src={image}/>
         </a>
-
-        
         );
 
     return(
@@ -34,7 +32,7 @@ const ProjectsOverview = ({
                     </h1>
 
                     <div className="content">
-                        <Button className="projectLink" href={project.link} target="_blank" variant="dark">{(index === 7)?"PRESENTATION":"DOWNLOAD"}</Button>
+                        <Button className="projectLink" href={project.link} target="_blank" variant="dark">DOWNLOAD</Button>
                         <h4>Role: {project.role}</h4>
                         <h4>Team Size: {project.teamsize}</h4>
                         <h4>{project.date}</h4>
@@ -50,11 +48,6 @@ const ProjectsOverview = ({
                     </div>
 
                     <div className="scrollingBar">
-                        <div className="scrollElements">
-                            <div className="scrollText">
-                            
-                            </div>
-                        </div>
                     </div>
                 </div>
 

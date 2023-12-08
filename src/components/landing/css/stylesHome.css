@@ -200,17 +200,12 @@ p{
     display: flex;
     flex-direction: row;
     flex: 1;
+    align-self: center;
 
     margin-top: -2.5vh;
     margin-left: 1vw;
     padding: 0 0.5vw 0.5vw 0.5vw;
-}
-
-@media (max-width: 1000px){
-    .aboutWrapper {
-        margin-top: 3vh;
-        margin-left: 5vw;
-    }
+    width: 80%;
 }
 
 .aboutPicture {
@@ -234,10 +229,18 @@ p{
     background-color: #1B1D1F;
 }
 
+@media (max-width: 1400px) {
+    .aboutWrapper {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1000px) {
     .aboutWrapper {
         flex-direction: column;
         align-items: center;
+        margin-top: 3vh;
+        margin-left: 5vw;
     }
 
     .aboutPicture {
@@ -349,7 +352,7 @@ p{
 }
 
 .descriptionText {
-    font-size: 15px;
+    font-size: 22px;
     padding: 0 1vw 0 1vw;
 }
 
@@ -412,6 +415,10 @@ p{
 }
 
 @media (max-width: 1000px){
+    .descriptionText {
+        font-size: 15px;
+    }
+
     .recentProjects {
         flex-direction: column;
         align-items: center;
@@ -487,6 +494,8 @@ p{
 .experienceSection {
     display: flex;
     flex-direction: row;
+    width: 80%;
+    align-self: center;
 }
 
 .experienceHeader {
@@ -538,6 +547,12 @@ p{
     word-break: break-word;
     font-size: 18px; 
     color: white;
+}
+
+@media (max-width: 1400px){
+    .experienceSection {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1000px){

@@ -175,13 +175,18 @@
     }
 
     .images {
-        max-width: 250px;
+        max-width: 300px;
     }
 }
 
 @media (max-width: 420px) {
+    .overviewBackground{
+        flex-direction: column;
+    }
+
     .images {
-        max-width: 0px;
+        max-width: 500px;
+        min-width: 360px;
         border-width: 0;
     }
 
@@ -197,5 +202,10 @@
         font-size: 14px;
         padding-right: 1.5vw;
         padding-bottom: 0vh;
+    }
+
+    .scrollingBar{
+        background-color: rgba(27, 29, 31, 0);
+        width: 0vw;
     }
 }
