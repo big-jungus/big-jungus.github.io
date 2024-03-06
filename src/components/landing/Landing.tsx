@@ -33,7 +33,6 @@ const Landing = ({
 
     return (
         <div>
-            <div className="pageBar"/>
             <div className="background">
                 <div className="scrollingArrows">
                     <div className="arrow"/>

@@ -20,7 +20,7 @@
     top: -5vh;
     width: 10px;
     height: 110vh;
-    background-color: #ffffff;
+    background-color: #F6F7EB;
 }
 
 .sectionHeading {
@@ -30,7 +30,7 @@
     font-family: 'Lexend Zetta', sans-serif;
     letter-spacing: -5px;
 
-    color:#E94F37;
+    color:#F6F7EB;
     font-size: 60px;
 }
 
@@ -50,6 +50,7 @@ html {
 }
 
 p{
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
 }
 
@@ -91,7 +92,7 @@ p{
     z-index: 0;
     width: 0; 
     height: 0; 
-    padding-bottom: 20vh;
+    padding-bottom: 10vw;
     margin-left: 3vw;
 
     border-left: 20vw solid transparent;
@@ -102,18 +103,17 @@ p{
     animation: TopToBottom 10s infinite linear;
 }
 
-@media(max-width: 1000px){
-    .arrow{
-        animation: TopToBottom 12s infinite linear;
-    }
+.highlight {
+    color: #E94F37;
+    font-weight: bold;
 }
 
 @keyframes TopToBottom {
     from {
-        transform: translateY(-70%);
+        transform: translateY(-20vw);
     }
     to {
-        transform: translateY(83%);
+        transform: translateY(20vw);
     }
 }
 
@@ -123,7 +123,7 @@ p{
     width: 100%;
     max-height: 6vh;
 
-    color: white;
+    color: #F6F7EB;
     font-size: 15px;
     font-family: 'Lexend Zetta', sans-serif;
     background-color: #0D0D0D !important;
@@ -156,7 +156,7 @@ p{
         width: 100%;
         max-height: 6vh;
     
-        color: white;
+        color: #F6F7EB;
         font-size: 2vw;
         font-weight: 300;
         background-color: rgba(0, 0, 0, 0.35) !important;
@@ -178,16 +178,18 @@ p{
     flex-direction: column;
 
     width: 80vw;
-    min-height: 70vh;
+    min-height: 20vh;
     margin-top: 10vh;
 }
 
 .aboutHeading {
     position: relative;
-    align-self: flex-end;
+    align-self: center;
 
     max-width: fit-content;
     white-space: nowrap;
+
+    letter-spacing: -0.22em;
 }
 
 .aboutBackground .headingBar {
@@ -202,10 +204,9 @@ p{
     flex: 1;
     align-self: center;
 
-    margin-top: -2.5vh;
-    margin-left: 1vw;
-    padding: 0 0.5vw 0.5vw 0.5vw;
-    width: 80%;
+    margin-top: -4vh;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    width: 70%;
 }
 
 .aboutPicture {
@@ -221,17 +222,17 @@ p{
     order: 0;
     flex: 1;
 
-    padding: 2vh 2vw 3vh 2vw;
-    margin-top: -2vh;
-    margin-right: -1vw;
+    text-align: center;
 
-    color: white;
+    padding: 3vh 2vw 1vh 2vw;
+
+    color: #F6F7EB;
     background-color: #1B1D1F;
 }
 
 @media (max-width: 1400px) {
     .aboutWrapper {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -274,6 +275,7 @@ p{
 
 /*Projects*/
 .projectsBackground {
+    z-index: 1;
     order: 2;
 
     display: flex;
@@ -287,16 +289,10 @@ p{
 }
 
 .projectsBackground .sectionHeading {
-    align-self: flex-start;
-    padding-left: 5vw;
+    align-self: center;
     z-index: 1;
 
-    width: 80vw;
-    color: white;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    color: #F6F7EB;
 }
 
 @media (max-width: 1000px){
@@ -306,135 +302,73 @@ p{
     }
 }
 
-.projectsBackground .headingBar{
-    align-self: flex-start;
-    z-index: 2;
-    height: 10px;
-    width: 50%;
-    background-color: #ffffff;
-}
-
-.customCarousel{
-    align-self: flex-start;
-    padding-left: 5vw;
-    z-index: 0;
-
+.projectSectionLeft {
     display: flex;
     flex-direction: row;
+    width: 80%;
+    align-self: center;
 }
 
-.carouselImage{
-    width: 50vw;
-    height: 28vw;
+.projectTitle {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 2vw;
+
+    white-space: nowrap;
 }
 
-.customCarousel .description {
-    position: absolute;
+.projectSectionLeft .projectTitle h2{
+    font-size: 50px;
+    letter-spacing: -5px;
+    
+
+    color: #F6F7EB;
+}
+
+.projectSectionLeft .projectTitle h3{
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0;
+
+    color: #F6F7EB;
+}
+
+.projectSectionLeft .projectBody {
+    margin-top: 3vh;
+    margin-left: -16vw;
+
+    padding: 4vh 4vw 6vh 16vw;
+
     background-color: #1B1D1F;
-    color: #ffffff;
+}
 
-    margin-right: 10vw;
-    right: 0;
-    padding: 1vw;
+.projectSectionLeft .projectBody p {
+    color: #F6F7EB;
+}
 
-    width: 24vw;
-    height: 28vw;
+.projectSectionLeft ul {
+    list-style-type: square;
+    align-self: center;
+}
 
+.projectSectionLeft .projectBody li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-size: 18px; 
+    color: #F6F7EB;
+    color: #F6F7EB;
+}
+
+.projectSectionLeft .projectBody{
     display: flex;
     flex-direction: column;
 }
 
-.descriptionHeader {
-    font-size: 30px;
-    font-family: 'Lexend Zetta', sans-serif;
-    letter-spacing: -5px;
-    text-transform: uppercase;
-}
-
-.descriptionText {
-    font-size: 22px;
-    padding: 0 1vw 0 1vw;
-}
-
-.galleryButton {
-    align-self: center;
-    width: 90%;
-
-    font-family: 'Lexend Zetta', sans-serif;
-    letter-spacing: -3px;
-    background-color: #E94F37;
-
-    border: none;
-    border-radius: 0;
-
-    position: absolute;
-    bottom: 1vw;
-}
-
-.galleryButton:hover{
-    background-color: #ca523f;
-}
-
-.scrollingBackground{
-    background-color: #E94F37;
-    width: 100vw;
-    z-index: 2;
-    margin-top: 1vh;
-    cursor: pointer;
-}
-
-.leftToRightText{
-    font-size: 35px;
-    letter-spacing: -5px;
-    font-family: 'Lexend Zetta', sans-serif;
-    color: #ffffff;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.scrollingItem {
-    white-space: nowrap;
-    padding: 0.25vw;
-    animation: LeftToRight 30s infinite linear;
-}
-
-.scrollingItem img {
-    padding-bottom: 0.5vw;
-}
-
-@keyframes LeftToRight {
-    from {
-        transform: translateX(-50%);
-    }
-    to {
-        transform: translateX(0%);
-    }
-}
-
 @media (max-width: 1000px){
-    .descriptionText {
-        font-size: 15px;
-    }
-
-    .recentProjects {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .galleryButton{
-        font-size: 15px;
-    }
-
-    .scrollingBackground{
-        margin-top: 3vh;
-    }
-
-    .descriptionHeader{
-        font-size: 20px;
-    }
+    
 
     .projectsBackground{
         min-height: 50vh;
@@ -443,21 +377,7 @@ p{
 }
 
 @media (max-width: 500px){
-    .customCarousel{
-        flex-direction: column;
-    }
 
-    .customCarousel .description{
-        position: relative;
-        margin-top: 1vh;
-        width: 100%;
-        height: 22vh;
-    }
-
-    .customCarousel .carouselImage{
-        width: 75vw;
-        height: 42vw;
-    }
 
     .projectsBackground .headingBar{
         height: 5px;
@@ -477,15 +397,9 @@ p{
     margin-top: 10vh;
 }
 
-.experienceBackground .headingBar{
-    height: 10px;
-    width: 100%;
-    background-color: #ffffff;
-}
-
 .experienceHeading {
     position: relative;
-    align-self: flex-end;
+    align-self: center;
 
     max-width: fit-content;
     white-space: nowrap;
@@ -514,25 +428,26 @@ p{
     font-family: 'Lexend Zetta', sans-serif;
     letter-spacing: -5px;
 
-    color: white;
+    color: #F6F7EB;
 
     cursor: pointer;
 }
 
 .experiencePos {
     font-size: 25px;
-    color: white;
+    color: #F6F7EB;
 }
 
 .experienceDate {
     font-size: 25px;
-    color: white;
+    color: #F6F7EB;
 }
 
-.experienceBackground ul {
-    list-style-type: square;
-    align-self: center;
+.experienceBackground p {
+    color: #F6F7EB;
+}
 
+.experienceBody {
     margin-top: 3vh;
     margin-left: -10vw;
 
@@ -541,12 +456,17 @@ p{
     background-color: #1B1D1F;
 }
 
-.experienceBackground li {
+.experienceBody ul {
+    list-style-type: square;
+    align-self: center;
+}
+
+.experienceBody li {
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
     font-size: 18px; 
-    color: white;
+    color: #F6F7EB;
 }
 
 @media (max-width: 1400px){
@@ -561,7 +481,7 @@ p{
         align-self: center;
         margin-left: 5vw;
     }
-    .experienceBackground ul {
+    .experienceBody ul {
         margin-left: 0;
         margin-top: 0;
         padding: 4vh 4vh 6vh 6vh;
@@ -583,12 +503,12 @@ p{
     .experienceDate{
         font-size: 20px;
     }
-    .experienceBackground ul{
+    .experienceBody ul{
         margin-left: 5vw;
         padding: 2vh 2vh 3vh 3vh;
     }
 
-    .experienceBackground li {
+    .experienceBody li {
         font-size: 12px;
     }
 
@@ -610,16 +530,16 @@ p{
 }
 
 .contactBackground .sectionHeading {
-    align-self: flex-start;
-    padding-left: 5vw;
-    color: white;
+    align-self: center;
+    color: #F6F7EB;
+    letter-spacing: -0.22em;
 }
 
 .contactBackground .headingBar{
     align-self: flex-start;
     height: 10px;
     width: 50%;
-    background-color: #ffffff;
+    background-color: #F6F7EB;
 }
 
 .contactImagesContainer {

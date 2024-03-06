@@ -4,8 +4,7 @@ function Experience () {
     return (
         <div className="experienceBackground">
             <div className="anchor" id="experience"/>
-            <div className="headingBar"/>
-            <h1 className="sectionHeading experienceHeading">EXPERIENCE</h1>
+            <h1 className="sectionHeading experienceHeading">WORK EXPERIENCE</h1>
 
             <div className="experienceSection">
                 <div className="experienceHeader">
@@ -16,14 +15,19 @@ function Experience () {
                     <div>
                         <h3 className="experiencePos">Game Programming Intern</h3>
                         <h3 className="experienceDate">June 2023 - August 2023</h3>
+                        <h3 className="experienceDate">Team: <span className="highlight">5</span></h3>
                     </div>
                 </div>
+                
+                <div className="experienceBody">
+                    <p>This was a confidential project, making a realistic turn-based wargame based on a near-future scenario.</p>
 
-                <ul>
-                    <li>Collaborated with a team of two other game developer interns and two engineering interns to design and develop a turn-based wargame in Unreal Engine that utilized Matlab generated data, with the goal of simulating military weaponry for a possible near-future scenario.</li>
-                    <li>Designed and implemented the multiplayer framework, allowing for three different views of the game: two different players, and an omniscient game master.</li>
-                    <li>Developed the games's UI that both housed various game actions for all players, and displayed relevant Matlab generated data.</li>
-                </ul>
+                    <ul>
+                        <li>Tools: <span className="highlight">Unreal</span>, Git, Blueprints, C++</li>
+                        <li>Focused on <span className="highlight">developing the multiplayer framework</span> and implementing all UI into Unreal including <span className="highlight">menus, character selection, and HUD</span> .</li>
+                        <li>Worked closely with two engineers to incorporate live Matlab generated data into the game.</li>
+                    </ul>
+                </div>
             </div>
             <div className="padding"/>
         </div>

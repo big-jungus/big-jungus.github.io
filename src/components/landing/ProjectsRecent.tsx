@@ -1,7 +1,7 @@
 import { Carousel, Button } from "react-bootstrap";
 import Selector from "../CustomCarousel/CarouselSelector";
 
-import arrows from "/elements/arrows.svg"
+//import arrows from "/elements/arrows.svg"
 
 import "./css/stylesHome.css"
 
@@ -13,62 +13,39 @@ type Props = {
 }
 
 const Projects = ({
-        index,
-        setProjects,
-        updateIndex,
-        projectsList
     }: Props) =>{
-
-    function nextCard(){
-        if (index != (projectsList.length - 1)){
-            updateIndex(index + 1)
-        }
-    }
-
-    let project = projectsList[index]
-
-    const projectsImage = projectsList.map(project =>
-        <Carousel.Item>
-            <img className="carouselImage" src={project.images[0]}/>
-        </Carousel.Item>
-        );
 
     return(
         <div className="projectsBackground">
             <div className="anchor" id="recent"/>
-            <div className="headingBar"/>
             <div className="sectionHeading">
-                PROJECTS
-                <Selector index={index} updateIndex={updateIndex} projectsList={projectsList}/>
+                SELECTED GAMES
             </div>
-            
 
-            <div className="customCarousel">
-                <Carousel activeIndex={index} interval={null} controls={false} indicators={false}>
-                        {projectsImage}
-                </Carousel>
+            <div className="projectSectionLeft">
+                <div className="projectTitle">
+                    <h2>SAIC</h2>
                     
-                <div className="description">
-                    <h1 className="descriptionHeader">
-                        {project.title}
-                    </h1>
-                    <p className="descriptionText">
-                        {project.short}
-                    </p>
-                    <Button className="galleryButton" onClick={() => setProjects(true)} variant="dark">
-                        VIEW GALLERY
-                    </Button>
-                </div>
-            </div>
-
-            <div className="scrollingBackground" onClick={() => nextCard()}>
-                <div className="leftToRightText">
-                    <div className="scrollingItem">
-                    CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/> CHECK OUT MORE <img src={arrows}/>
+                    <div>
+                        <h3>Game Programming Intern</h3>
+                        <h3>June 2023 - August 2023</h3>
+                        <h3>Team: <span className="highlight">5</span></h3>
                     </div>
                 </div>
-            </div>
+                
+                <div className="projectBody">
+                    <p>This was a confidential project, making a realistic turn-based wargame based on a near-future scenario.</p>
 
+                    <ul>
+                        <li>Tools: <span className="highlight">Unreal</span>, Git, Blueprints, C++</li>
+                        <li>Focused on <span className="highlight">developing the multiplayer framework</span> and implementing all UI into Unreal including <span className="highlight">menus, character selection, and HUD</span> .</li>
+                        <li>Worked closely with two engineers to incorporate live Matlab generated data into the game.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            
             <div className="padding" />
         </div>
     );

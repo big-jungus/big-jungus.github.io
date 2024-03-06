@@ -8,8 +8,7 @@ function Contact(){
     return(
         <div className="contactBackground">
             <div className="anchor" id="contact"/>
-            <div className="headingBar"/>
-            <h1 className="sectionHeading">CONTACT</h1>
+            <h1 className="sectionHeading">Let's keep in contact!</h1>
 
             <div className="contactImagesContainer">
                 <a href="mailto: matthewjung1010@gmail.com" target="_blank">
