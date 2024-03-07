@@ -293,83 +293,154 @@ p{
     z-index: 1;
 
     color: #F6F7EB;
+    padding-bottom: 5vh;
 }
 
-@media (max-width: 1000px){
-    .projectsBackground .sectionHeading {
-        flex-direction: column;
-        text-align: left;
-    }
-}
-
-.projectSectionLeft {
+.projectSection {
     display: flex;
     flex-direction: row;
-    width: 80%;
     align-self: center;
+    width: 80%;
+    padding-bottom: 5vh;
 }
 
-.projectTitle {
-    z-index: 2;
+.projectHeaderLeft {
+    order: 0;
     display: flex;
     flex-direction: column;
+    z-index: 1;
+    max-width: 20%;
+    align-items: flex-start;
 
-    padding-left: 2vw;
+    padding: 0 0 0 4vw;
 
     white-space: nowrap;
 }
 
-.projectSectionLeft .projectTitle h2{
-    font-size: 50px;
+.projectHeaderRight {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    max-width: 20%;
+    align-items: flex-end;
+
+    padding: 0 0 0 4vw;
+
+    white-space: nowrap;
+}
+
+.projectLink {
+    align-self: flex-start;
+    font-size: 35px;
+    font-family: 'Lexend Zetta', sans-serif;
     letter-spacing: -5px;
-    
 
+    color: #F6F7EB;
+
+    cursor: pointer;
+}
+
+.projectSection h2 {
+    font-size: 40px;
+    font-family: 'Lexend Zetta', sans-serif;
+    letter-spacing: -5px;
     color: #F6F7EB;
 }
 
-.projectSectionLeft .projectTitle h3{
+.projectHeaderLeft h2 {
+    margin-left: -0.5vw;
+    text-align: start;
+}
+
+.projectHeaderRight h2 {
+    text-align: end;
+}
+
+.projectSection h3 {
     font-size: 25px;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 0;
-
     color: #F6F7EB;
 }
 
-.projectSectionLeft .projectBody {
-    margin-top: 3vh;
-    margin-left: -16vw;
+.projectHeaderLeft h3 {
+    text-align: start;
+}
 
-    padding: 4vh 4vw 6vh 16vw;
+.projectHeaderRight h3 {
+    text-align: end;
+}
+
+.projectBodyLeft {
+    order: 1;
+    margin-top: 7vh;
+
+    padding: 4vh 4vw 4vh 10vw;
+
+    align-self: flex-end;
 
     background-color: #1B1D1F;
 }
 
-.projectSectionLeft .projectBody p {
-    color: #F6F7EB;
+.projectBodyRight {
+    order: 0;
+    margin-top: 7vh;
+    margin-left: 4vw;
+    margin-right: -2vw;
+
+    padding: 4vh 10vw 4vh 3vw;
+
+    align-self: flex-end;
+
+    background-color: #1B1D1F;
 }
 
-.projectSectionLeft ul {
+.projectSection p {
+    color: #F6F7EB;
+    margin: 0 0 0 -2vw;
+}
+
+.projectSection ul {
     list-style-type: square;
     align-self: center;
 }
 
-.projectSectionLeft .projectBody li {
+.projectSection li {
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-word;
     font-size: 18px; 
     color: #F6F7EB;
-    color: #F6F7EB;
 }
 
-.projectSectionLeft .projectBody{
-    display: flex;
-    flex-direction: column;
+@media (max-width: 1400px){
+    .projectSection {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1000px){
-    
+    .projectSection {
+        flex-direction: column;
+        align-self: center;
+        margin-left: 5vw;
+    }
+    .projectBody ul {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 4vh 4vh 6vh 6vh;
+    }
 
+    .projectBackground{
+        min-height: 50vh;
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 500px){
+    
+}
+
+@media (max-width: 1000px){
     .projectsBackground{
         min-height: 50vh;
         margin-top: 5vh;
@@ -377,8 +448,6 @@ p{
 }
 
 @media (max-width: 500px){
-
-
     .projectsBackground .headingBar{
         height: 5px;
     }
@@ -403,117 +472,13 @@ p{
 
     max-width: fit-content;
     white-space: nowrap;
-}
-
-.experienceSection {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    align-self: center;
-}
-
-.experienceHeader {
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-
-    padding: 0 0 0 4vw;
-
-    white-space: nowrap;
-}
-
-.experienceCompany {
-    align-self: center;
-    font-size: 50px;
-    font-family: 'Lexend Zetta', sans-serif;
-    letter-spacing: -5px;
-
-    color: #F6F7EB;
-
-    cursor: pointer;
-}
-
-.experiencePos {
-    font-size: 25px;
-    color: #F6F7EB;
-}
-
-.experienceDate {
-    font-size: 25px;
-    color: #F6F7EB;
-}
-
-.experienceBackground p {
-    color: #F6F7EB;
-}
-
-.experienceBody {
-    margin-top: 3vh;
-    margin-left: -10vw;
-
-    padding: 4vh 4vw 6vh 15vw;
-
-    background-color: #1B1D1F;
-}
-
-.experienceBody ul {
-    list-style-type: square;
-    align-self: center;
-}
-
-.experienceBody li {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
-    font-size: 18px; 
-    color: #F6F7EB;
-}
-
-@media (max-width: 1400px){
-    .experienceSection {
-        width: 100%;
-    }
+    padding-bottom: 5vh;
 }
 
 @media (max-width: 1000px){
-    .experienceSection {
-        flex-direction: column;
-        align-self: center;
-        margin-left: 5vw;
-    }
-    .experienceBody ul {
-        margin-left: 0;
-        margin-top: 0;
-        padding: 4vh 4vh 6vh 6vh;
-    }
-
     .experienceBackground{
         min-height: 50vh;
         margin-top: 5vh;
-    }
-}
-
-@media (max-width: 500px){
-    .experienceCompany{
-        font-size: 35px;
-    }
-    .experiencePos{
-        font-size: 20px;
-    }
-    .experienceDate{
-        font-size: 20px;
-    }
-    .experienceBody ul{
-        margin-left: 5vw;
-        padding: 2vh 2vh 3vh 3vh;
-    }
-
-    .experienceBody li {
-        font-size: 12px;
-    }
-
-    .experienceBackground .headingBar{
-        height: 5px;
     }
 }
 
