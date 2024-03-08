@@ -350,6 +350,7 @@ p{
 
 .projectHeaderLeft h2 {
     margin-left: -0.5vw;
+    align-self: flex-start;
     text-align: start;
 }
 
@@ -370,9 +371,20 @@ p{
     text-align: end;
 }
 
+.projectTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.projectIcon {
+    max-width: 22vw;
+}
+
+
 .projectBodyLeft {
     order: 1;
-    margin-top: 7vh;
+    margin-top: 10vh;
 
     padding: 4vh 4vw 4vh 10vw;
 
@@ -383,7 +395,7 @@ p{
 
 .projectBodyRight {
     order: 0;
-    margin-top: 7vh;
+    margin-top: 10vh;
     margin-left: 4vw;
     margin-right: -2vw;
 
@@ -507,10 +519,20 @@ p{
     background-color: #F6F7EB;
 }
 
+.contactBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactBody p {
+    align-self: center;
+    text-align: center;
+    color: #F6F7EB;
+}
+
 .contactImagesContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 60%;
 
     align-items: center;

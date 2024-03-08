@@ -1,9 +1,9 @@
-import { Carousel, Button } from "react-bootstrap";
-import Selector from "../CustomCarousel/CarouselSelector";
-
-//import arrows from "/elements/arrows.svg"
-
 import "./css/stylesHome.css"
+import ETH_Icon from "/projectPictures/Ether/ETH1.png";
+import EDO_Icon from "/projectPictures/EdoEdo/EDO1.png";
+import LR_Icon from "/projectPictures/LightRunner/LR1.jpg";
+
+import { Button } from "react-bootstrap";
 
 type Props = {
     index: number,
@@ -24,13 +24,18 @@ const Projects = ({
 
             <div className="projectSection">
                 <div className="projectHeaderLeft">
-                    <h2>PROJECT: ETHER</h2>
+                    <div className="projectTitle">
+                        <h2>PROJECT: ETHER</h2>
+                        <Button>Play Now!</Button>
+                    </div>
                     
                     <div>
                         <h3>UI/Gameplay Programmer</h3>
                         <h3>In Progress</h3>
                         <h3>Team: <span className="highlight">40</span></h3>
                     </div>
+
+                    <img src={ETH_Icon} className="projectIcon"></img>
                 </div>
                 
                 <div className="projectBodyLeft">
@@ -52,6 +57,8 @@ const Projects = ({
                         <h3>In Progress</h3>
                         <h3>Team: <span className="highlight">43</span></h3>
                     </div>
+
+                    <img src={EDO_Icon} className="projectIcon"></img>
                 </div>
                 
                 <div className="projectBodyRight">
@@ -73,6 +80,8 @@ const Projects = ({
                         <h3>April 2023 - June 2023</h3>
                         <h3>Team: <span className="highlight">4</span></h3>
                     </div>
+
+                    <img src={LR_Icon} className="projectIcon"></img>
                 </div>
                 
                 <div className="projectBodyLeft">
