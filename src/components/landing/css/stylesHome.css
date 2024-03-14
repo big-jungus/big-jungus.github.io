@@ -281,7 +281,7 @@ p{
     display: flex;
     flex-direction: column;
 
-    width: 80vw;
+    width: 95vw;
     min-height: 70vh;
     margin-top: 10vh;
 
@@ -386,7 +386,7 @@ p{
 }
 
 .projectIcon {
-    width: 25%;
+    width: 50%;
 }
 
 .projectDescription {
@@ -399,8 +399,11 @@ p{
     margin-top: 0.5vw;
     align-self: flex-end;
     background-color: #E94F37;
+    color: #F6F7EB;
     border-radius: 0;
     border-width: 0;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    font-weight: 600;
 }
 
 .projectDescription .buttonRight {
