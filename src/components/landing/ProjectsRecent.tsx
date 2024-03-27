@@ -1,9 +1,9 @@
 import "./css/stylesHome.css"
 import ETH_Icon from "/projectPictures/Ether/ETH1.png";
-import ETH_Icon2 from "/projectPictures/Ether/ETH2.jpg";
+import ETH_Icon2 from "/projectPictures/Ether/ETH5.png";
 
-import EDO_Icon from "/projectPictures/EdoEdo/EDO1.png";
-import EDO_Icon2 from "/projectPictures/EdoEdo/EDO2.png";
+import EDO_Icon from "/projectPictures/EdoEdo/EDO5.png";
+import EDO_Icon2 from "/projectPictures/EdoEdo/EDO6.png";
 
 import LR_Icon from "/projectPictures/LightRunner/LR1.jpg";
 import LR_Icon2 from "/projectPictures/LightRunner/LR2.gif";

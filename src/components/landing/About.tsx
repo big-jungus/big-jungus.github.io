@@ -16,9 +16,7 @@ function About() {
                     I'm currently a senior at UC Irvine, majoring in Game Design & Interactive Media. I specialize in both UI and Gameplay Programming, and I'm passionate about pushing the boundaries of games to create fresh gameplay experiences for all!
                     <ul/>
                     </p>
-
                     <p className="highlight aboutHover" onClick={() => NavNavigation("recent")}>↓ SEE MY GAMES ↓</p>
-                    
                 </div>
             </div>
             <div className="padding"/>

@@ -1,9 +1,5 @@
 import "./css/stylesHome.css"
 
-import email from "/images/icons/email.svg";
-import linkedin from "/images/icons/linkedin.svg";
-import resume from "/images/icons/resume.svg";
-
 function Contact(){
     return(
         <div className="contactBackground">
@@ -12,22 +8,13 @@ function Contact(){
 
 
             <div className="contactBody">
-                <p>You can best reach me at <a href="mailto: matthewjung1010@gmail.com" target="_blank">matthewjung1010@gmail.com</a>
-                    , or at my <a href="mailto: matthewjung1010@gmail.com" target="_blank">LinkedIn</a>!
+                <p> Thanks for checking out my work! I'd love to stay in touch with you, you can best reach me through my email 
+                    at <a href="mailto: matthewjung1010@gmail.com" target="_blank">matthewjung1010@gmail.com</a>.
                     </p>
 
-                <div className="contactImagesContainer">
-                    <a href="mailto: matthewjung1010@gmail.com" target="_blank">
-                        <img className="contactImage links email" src={email} width={110} height={110}/>
-                    </a>
-                    <a href="https://www.linkedin.com/in/matthewjung1010/" target="_blank">
-                        <img className="contactImage " src={linkedin}/>
-                    </a>
-                    <a href="Matthew Jung - Resume.pdf" target="_blank">
-                        <img className="contactImage " src={resume}/>
-                    </a>
-                </div>
+                    <p><a href="Matthew Jung - Resume.pdf" target="_blank" className="contactLink">RESUME</a> / <a href="mailto: matthewjung1010@gmail.com" target="_blank" className="contactLink">EMAIL</a> / <a href="https://www.linkedin.com/in/matthewjung1010/" target="_blank" className="contactLink">LINKEDIN</a></p>
             </div>
+            <div className="padding"/>
         </div>
     );
 }

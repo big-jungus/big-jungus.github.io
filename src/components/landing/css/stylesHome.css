@@ -70,7 +70,7 @@ p{
     position: fixed;
     background-color: #0D0D0D;
 
-    margin-left: 10vw;
+    margin-left: 17.5vw;
     margin-top: -20vh;
     width: 60vw;
     height: 120vh;
@@ -192,12 +192,6 @@ p{
     letter-spacing: -0.22em;
 }
 
-.aboutBackground .headingBar {
-    height: 10px;
-    width: 100%;
-    background-color: #ffffff;
-}
-
 .aboutWrapper {
     display: flex;
     flex-direction: row;
@@ -207,15 +201,6 @@ p{
     margin-top: 0vh;
     padding: 0.5vw 0.5vw 0.5vw 0.5vw;
     width: 70%;
-}
-
-.aboutPicture {
-    order: 0;
-
-    height: 400px;
-    width: 400px;
-
-    box-shadow: 15px 15px #E94F37;
 }
 
 .aboutParagraph {
@@ -253,7 +238,6 @@ p{
     }
 
     .aboutBackground{
-        min-height: 50vh;
         margin-top: 5vh;
     }
 }
@@ -273,6 +257,10 @@ p{
 
     .aboutBackground .headingBar{
         height: 5px;
+    }
+
+    .aboutHeading {
+        font-size: 30px;
     }
 }
 
@@ -297,7 +285,6 @@ p{
     z-index: 1;
 
     color: #F6F7EB;
-    padding-bottom: 5vh;
 }
 
 .projectHolder {
@@ -393,7 +380,7 @@ p{
 
 .projectIcon {
     width: 49.5%;
-    max-height: 35vh;
+    height: 35%;
 }
 
 .projectDescription {
@@ -402,14 +389,14 @@ p{
 }
 
 .projectDescription .buttonLeft {
-    width: 10vw;
+    width: fit-content;
     margin-top: 0.5vw;
     align-self: flex-end;
     background-color: #E94F37;
     color: #F6F7EB;
     border-radius: 0;
     border-width: 0;
-    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
     font-weight: 600;
 }
 
@@ -418,14 +405,14 @@ p{
 }
 
 .projectDescription .buttonRight {
-    width: 10vw;
+    width: fit-content;
     margin-top: 0.5vw;
     align-self: flex-start;
     background-color: #E94F37;
     color: #F6F7EB;
     border-radius: 0;
     border-width: 0;
-    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    padding: 0.5vw 1vw 0.5vw 1vw;
     font-weight: 600;
 }
 
@@ -499,7 +486,67 @@ p{
 }
 
 @media (max-width: 500px){
+    .projectHeaderLeft h2{
+        font-size: 25px;
+    }
+
+    .projectHeaderLeft h3 {
+        font-size: 18px;
+    }
     
+    .projectSection .buttonLeft {
+        align-self: flex-start;
+    }
+
+    .projectHeaderRight {
+        order: 0;
+        align-items: flex-start;
+        padding: 0 0 0 0;
+    }
+
+    .projectHeaderRight h2 {
+        font-size: 25px;
+        text-align: start;
+    }
+
+    .projectHeaderRight h3 {
+        font-size: 18px;
+        text-align: start;
+    }
+
+    .projectsBackground .sectionHeading {
+        font-size: 28px;
+    }
+
+    .projectSection li {
+        font-size: 15px;
+    }
+
+    .projectBodyLeft {
+        margin: 2vh 0 0 0;
+
+        padding: 4vh 4vw 4vh 10vw;
+    }
+
+    .projectBodyRight {
+        margin: 2vh 0 0 0;
+
+        padding: 4vh 4vw 4vh 10vw;
+    }
+
+    .projectImages {
+        flex-direction: column;
+    }
+
+    .projectIcon {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 1vh;
+    }
+
+    .projectHolder {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1000px){
@@ -534,13 +581,18 @@ p{
 
     max-width: fit-content;
     white-space: nowrap;
-    padding-bottom: 5vh;
 }
 
 @media (max-width: 1000px){
     .experienceBackground{
         min-height: 50vh;
         margin-top: 5vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .experienceHeading {
+        font-size: 27px;
     }
 }
 
@@ -553,7 +605,9 @@ p{
     flex-direction: column;
     align-items: center;
 
-    width: 80vw;
+    width: 70vw;
+
+    padding-bottom: 10vh;
 }
 
 .contactBackground .sectionHeading {
@@ -572,6 +626,8 @@ p{
 .contactBody {
     display: flex;
     flex-direction: column;
+    padding: 3vh 2vw 1vh 2vw;
+    background-color: #1B1D1F;
 }
 
 .contactBody p {
@@ -580,13 +636,22 @@ p{
     color: #F6F7EB;
 }
 
+.contactBody p a {
+    color: #E94F37;
+}
+
 .contactImagesContainer {
     display: flex;
     flex-direction: row;
     width: 60%;
 
-    align-items: center;
+    justify-content: space-between;
     align-self: center;
+}
+
+.contactLink {
+    color:#E94F37;
+    font-weight: bold;
 }
 
 @media (max-width: 500px){
@@ -621,5 +686,15 @@ p{
 
     .email {
         width: 13vw;
+    }
+}
+
+@media (max-width: 500px){
+    p {
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 15px;
     }
 }
