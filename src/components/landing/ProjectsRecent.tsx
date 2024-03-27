@@ -1,7 +1,12 @@
 import "./css/stylesHome.css"
 import ETH_Icon from "/projectPictures/Ether/ETH1.png";
+import ETH_Icon2 from "/projectPictures/Ether/ETH2.jpg";
+
 import EDO_Icon from "/projectPictures/EdoEdo/EDO1.png";
+import EDO_Icon2 from "/projectPictures/EdoEdo/EDO2.png";
+
 import LR_Icon from "/projectPictures/LightRunner/LR1.jpg";
+import LR_Icon2 from "/projectPictures/LightRunner/LR2.gif";
 
 import { Button } from "react-bootstrap";
 
@@ -35,7 +40,7 @@ const Projects = ({
                     </div>
                     
                     <div className="projectDescription">
-                        <Button bsPrefix="buttonLeft">PLAY NOW!</Button>
+                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://www.google.com/", "_blank")}>PLAY NOW!</Button>
                         <div className="projectBodyLeft">
                             <ul>
                                 <p>Action-Stealth game focused on using magical abilities to outwit your enemies!</p>
@@ -49,6 +54,7 @@ const Projects = ({
 
                 <div className="projectImages">
                         <img src={ETH_Icon} className="projectIcon"></img>
+                        <img src={ETH_Icon2} className="projectIcon"/>
                 </div>
             </div>
 
@@ -65,7 +71,7 @@ const Projects = ({
                     </div>
                     
                     <div className="projectDescription">
-                        <Button className="buttonRight">PLAY NOW!</Button>
+                        <Button bsPrefix="buttonRight" onClick={()=> window.open("https://www.google.com/", "_blank")}>PLAY NOW!</Button>
                         <div className="projectBodyRight">
                             <ul>
                                 <p>Rogue-like card game focused on cooking up dishes to defeat animated foods.</p>
@@ -79,6 +85,7 @@ const Projects = ({
 
                 <div className="projectImages">
                         <img src={EDO_Icon} className="projectIcon"></img>
+                        <img src={EDO_Icon2} className="projectIcon"></img>
                 </div>
             </div>
 
@@ -95,7 +102,7 @@ const Projects = ({
                     </div>
                     
                     <div className="projectDescription">
-                        <Button className="buttonLeft">PLAY NOW!</Button>
+                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://www.google.com/", "_blank")}>PLAY NOW!</Button>
                         <div className="projectBodyLeft">
                             <ul>
                                 <p>1 vs. 1 arena shooter focused on movement mechanics.</p>
@@ -110,6 +117,7 @@ const Projects = ({
 
                 <div className="projectImages">
                         <img src={LR_Icon} className="projectIcon"></img>
+                        <img src={LR_Icon2} className="projectIcon"></img>
                 </div>
             </div>
 

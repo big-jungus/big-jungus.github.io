@@ -12,8 +12,7 @@ function Contact(){
 
 
             <div className="contactBody">
-                <p>You can best reach me at 
-                    <a href="mailto: matthewjung1010@gmail.com" target="_blank">matthewjung1010@gmail.com</a>
+                <p>You can best reach me at <a href="mailto: matthewjung1010@gmail.com" target="_blank">matthewjung1010@gmail.com</a>
                     , or at my <a href="mailto: matthewjung1010@gmail.com" target="_blank">LinkedIn</a>!
                     </p>
 

@@ -17,7 +17,7 @@ function About() {
                     <ul/>
                     </p>
 
-                    <p className="highlight" onClick={() => NavNavigation("recent")}>↓ SEE MY GAMES ↓</p>
+                    <p className="highlight aboutHover" onClick={() => NavNavigation("recent")}>↓ SEE MY GAMES ↓</p>
                     
                 </div>
             </div>

@@ -177,7 +177,7 @@ p{
     display: flex;
     flex-direction: column;
 
-    width: 80vw;
+    width: 90vw;
     min-height: 20vh;
     margin-top: 10vh;
 }
@@ -204,7 +204,7 @@ p{
     flex: 1;
     align-self: center;
 
-    margin-top: -4vh;
+    margin-top: 0vh;
     padding: 0.5vw 0.5vw 0.5vw 0.5vw;
     width: 70%;
 }
@@ -228,6 +228,10 @@ p{
 
     color: #F6F7EB;
     background-color: #1B1D1F;
+}
+
+.aboutHover:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 1400px) {
@@ -382,11 +386,14 @@ p{
 .projectImages {
     display: flex;
     flex-direction: row;
-    margin-top: -2vh;
+    justify-content: space-between;
+    
+    margin-top: 1vh;
 }
 
 .projectIcon {
-    width: 50%;
+    width: 49.5%;
+    max-height: 35vh;
 }
 
 .projectDescription {
@@ -406,10 +413,24 @@ p{
     font-weight: 600;
 }
 
+.projectDescription .buttonLeft:hover {
+    background-color: #b0402f;
+}
+
 .projectDescription .buttonRight {
     width: 10vw;
     margin-top: 0.5vw;
     align-self: flex-start;
+    background-color: #E94F37;
+    color: #F6F7EB;
+    border-radius: 0;
+    border-width: 0;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    font-weight: 600;
+}
+
+.projectDescription .buttonRight:hover {
+    background-color: #b0402f;
 }
 
 .projectBodyLeft {
@@ -502,7 +523,7 @@ p{
     display: flex;
     flex-direction: column;
 
-    width: 80vw;
+    width: 95vw;
     min-height: 70vh;
     margin-top: 10vh;
 }
