@@ -40,7 +40,7 @@ const Projects = ({
                     </div>
                     
                     <div className="projectDescription">
-                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://www.google.com/", "_blank")}>PLAY NOW!</Button>
+                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://pjheric.itch.io/project-ether-playtest", "_blank")}>PLAY NOW!</Button>
                         <div className="projectBodyLeft">
                             <ul>
                                 <p>Action-Stealth game focused on using magical abilities to outwit your enemies!</p>
@@ -71,7 +71,7 @@ const Projects = ({
                     </div>
                     
                     <div className="projectDescription">
-                        <Button bsPrefix="buttonRight" onClick={()=> window.open("https://www.google.com/", "_blank")}>PLAY NOW!</Button>
+                        <Button bsPrefix="buttonRight" onClick={()=> window.open("https://funbam.itch.io/edo-edo-teishoku", "_blank")}>PLAY NOW!</Button>
                         <div className="projectBodyRight">
                             <ul>
                                 <p>Rogue-like card game focused on cooking up dishes to defeat animated foods.</p>
@@ -102,7 +102,7 @@ const Projects = ({
                     </div>
                     
                     <div className="projectDescription">
-                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://www.google.com/", "_blank")}>PLAY NOW!</Button>
+                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://big-jungus.itch.io/light-runner", "_blank")}>PLAY NOW!</Button>
                         <div className="projectBodyLeft">
                             <ul>
                                 <p>1 vs. 1 arena shooter focused on movement mechanics.</p>
