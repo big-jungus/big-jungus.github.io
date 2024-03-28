@@ -25,7 +25,7 @@ const NavBar = ({
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Nav className="customNav" justify={true} fill={true}>
           <Navbar.Brand onClick={() => NavNavigation("about")}>MJ</Navbar.Brand>
-          <Nav.Link onClick={() => window.open("/portfolio/Matthew Jung - Resume.pdf", "_blank")}>RESUME</Nav.Link>
+          <Nav.Link onClick={() => window.open("Matthew Jung - Resume.pdf", "_blank")}>RESUME</Nav.Link>
           <Nav.Link onClick={() => NavNavigation("recent")}>PROJECTS</Nav.Link>
           <Nav.Link onClick={() => NavNavigation("experience")}>EXPERIENCE</Nav.Link>
           <Nav.Link onClick={() => NavNavigation("contact")}>CONTACT</Nav.Link>
