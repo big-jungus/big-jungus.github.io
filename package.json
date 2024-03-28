@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "1.0.0",
-  "homepage": "/",
+  "homepage": "https://www.matthew-jung.com/",
   "type": "module",
   "scripts": {
     "dev": "vite",
