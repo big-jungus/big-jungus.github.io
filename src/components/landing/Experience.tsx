@@ -30,6 +30,7 @@ function Experience () {
                                 <li>Tools: <span className="highlight">Unreal</span>, Git, Blueprints, C++</li>
                                 <li>Focused on <span className="highlight">developing the multiplayer framework</span> and implementing all UI into Unreal including <span className="highlight">menus, character selection, and HUD</span> .</li>
                                 <li>Worked closely with two engineers to incorporate live Matlab generated data into the game.</li>
+                                <li>Presented to key military personnel, <span className="highlight">exceeding stakeholder expectations.</span></li>
                             </ul>
                         </div>
                     </div>
