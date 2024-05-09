@@ -1,6 +1,6 @@
 import "./css/stylesHome.css"
-import ETH_Icon from "/projectPictures/Ether/ETH1.png";
-import ETH_Icon2 from "/projectPictures/Ether/ETH5.png";
+import ETH_Icon from "/projectPictures/Ether/ETH6.png";
+import ETH_Icon2 from "/projectPictures/Ether/ETH7.png";
 
 import EDO_Icon from "/projectPictures/EdoEdo/EDO5.png";
 import EDO_Icon2 from "/projectPictures/EdoEdo/EDO6.png";
@@ -34,7 +34,7 @@ const Projects = ({
                         
                         <div>
                             <h3>UI/Gameplay Programmer</h3>
-                            <h3>In Progress</h3>
+                            <h3>August 2023 - March 2023</h3>
                             <h3>Team: <span className="highlight">40</span></h3>
                         </div>
                     </div>
@@ -47,6 +47,7 @@ const Projects = ({
                                 <li>Tools: <span className="highlight">Unreal</span>, Figma, Perforce, Blueprints, C++, Airtable</li>
                                 <li><span className="highlight">Worked alongside with UX designers and UI artists</span> to implement each iteration of their designs into engine, including <span className="highlight"> all menus, HUD and more!</span></li>
                                 <li>Created multiple iterations of various accessibility features, such as <span className="highlight">subtitles, colorblind modes, aim assist, and high contrast display</span>.</li>
+                                <li>Developed both the <span className="highlight">Save & Load system</span> and the <span className="highlight">Objective system</span> for the game as well!</li>
                             </ul>
                         </div>
                     </div>
@@ -65,7 +66,7 @@ const Projects = ({
                         
                         <div>
                             <h3>Gameplay Programmer</h3>
-                            <h3>In Progress</h3>
+                            <h3>August 2023 - March 2023</h3>
                             <h3>Team: <span className="highlight">43</span></h3>
                         </div>
                     </div>
@@ -76,7 +77,7 @@ const Projects = ({
                             <ul>
                                 <p>Rogue-like card game focused on cooking up dishes to defeat animated foods.</p>
                                 <li>Tools: <span className="highlight">Unity</span>, Figma, Git, C#, Airtable</li>
-                                <li>Implemented all of the game's bosses, working with game designers to <span className="highlight">update bosses during each iteration of the game's system design</span>.</li>
+                                <li>Implemented all 5 of the game's bosses, working with game designers to <span className="highlight">update bosses during each iteration of the game's system design</span>.</li>
                                 <li>Worked with a UX designer to <span className="highlight">create the game's tutorial to walk players through the entire process of the game's core loop</span>.</li>
                             </ul>
                         </div>
@@ -108,7 +109,7 @@ const Projects = ({
                                 <p>1 vs. 1 arena shooter focused on movement mechanics.</p>
                                 <li>Tools: <span className="highlight">Unreal</span>, Perforce, Blueprints, C++</li>
                                 <li>Designed and implemented the game's movement systems such as wall-running and dynamic sliding.</li>
-                                <li><span className="highlight">Gathered feedback from multiple playtests and iterated on designs</span> to make the movement feel both smooth and thrilling for players.</li>
+                                <li><span className="highlight">Gathered feedback from over 20 playtests and iterated on each movement mechanic</span> to make the movement feel both smooth and rewarding for players.</li>
                                 <li>This was my first game made in Unreal Engine 5, and was a huge <span className="highlight">learning experience for both Unreal and multiplayer programming</span>.</li>
                             </ul>
                         </div>
