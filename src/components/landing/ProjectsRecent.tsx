@@ -2,8 +2,8 @@ import "./css/stylesHome.css"
 import ETH_Icon from "/projectPictures/Ether/ETH6.png";
 import ETH_Icon2 from "/projectPictures/Ether/ETH7.png";
 
-import EDO_Icon from "/projectPictures/EdoEdo/EDO5.png";
-import EDO_Icon2 from "/projectPictures/EdoEdo/EDO6.png";
+import EDO_Icon from "/projectPictures/EdoEdo/EDO7.png";
+import EDO_Icon2 from "/projectPictures/EdoEdo/EDO5.png";
 
 import LR_Icon from "/projectPictures/LightRunner/LR1.jpg";
 import LR_Icon2 from "/projectPictures/LightRunner/LR2.gif";

@@ -23,7 +23,7 @@ function Experience () {
                     </div>
                     
                     <div className="projectDescription">
-                        <Button className="buttonLeft">VIEW WEBSITE</Button>
+                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://www.saic.com", "_blank")}>VIEW WEBSITE</Button>
                         <div className="projectBodyLeft">
                             <ul>
                                 <p>This was a confidential project, making a realistic turn-based wargame based on a near-future scenario.</p>

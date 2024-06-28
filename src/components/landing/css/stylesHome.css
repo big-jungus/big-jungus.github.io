@@ -344,7 +344,7 @@ p{
 }
 
 .projectHeaderLeft h2 {
-    margin: 0 0 -0.5vw -0.5vw;
+    margin: 0 0 0 -0.5vw;
     align-self: flex-start;
     text-align: start;
 }

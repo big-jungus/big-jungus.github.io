@@ -9,7 +9,7 @@ function Contact(){
 
             <div className="contactBody">
                 <p> Thanks for checking out my work! I'd love to stay in touch with you, you can best reach me through my email 
-                    at <a href="mailto: matthewjung1010@gmail.com" target="_blank">matthewjung1010@gmail.com</a>.
+                    at <a className="contactLink" href="mailto: matthewjung1010@gmail.com" target="_blank">matthewjung1010@gmail.com</a>.
                     </p>
 
                     <p><a href="Matthew Jung - Resume.pdf" target="_blank" className="contactLink">RESUME</a> / <a href="mailto: matthewjung1010@gmail.com" target="_blank" className="contactLink">EMAIL</a> / <a href="https://www.linkedin.com/in/matthewjung1010/" target="_blank" className="contactLink">LINKEDIN</a></p>
