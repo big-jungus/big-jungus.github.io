@@ -40,7 +40,7 @@ const Projects = ({
                     </div>
                     
                     <div className="projectDescription">
-                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://pjheric.itch.io/project-ether-playtest", "_blank")}>PLAY NOW!</Button>
+                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://pjheric.itch.io/project-ether", "_blank")}>PLAY NOW!</Button>
                         <div className="projectBodyLeft">
                             <ul>
                                 <p>Action-Stealth game focused on using magical abilities to outwit your enemies!</p>
