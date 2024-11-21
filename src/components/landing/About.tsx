@@ -13,7 +13,7 @@ function About() {
             <div className="aboutWrapper">
                 <div className="aboutParagraph">
                     <p>
-                    I'm currently a senior at UC Irvine, majoring in Game Design & Interactive Media. I specialize in both UI and Gameplay Programming, and I'm passionate about pushing the boundaries of games to create fresh gameplay experiences for all!
+                    I'm a UI Engineer, currently making games in Unity and Unreal, and I'm passionate about pushing the boundaries of games to create fresh gameplay experiences for all!
                     <ul/>
                     </p>
                     <p className="highlight aboutHover" onClick={() => NavNavigation("recent")}>↓ SEE MY GAMES ↓</p>
