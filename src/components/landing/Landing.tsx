@@ -1,36 +1,10 @@
 import About from "./About";
 import ProjectsRecent from "./ProjectsRecent";
-import Experience from "./Experience";
 import Contact from "./Contact";
 
 import "./css/stylesHome.css"
 
-import { useEffect } from "react";
-
-type Props = {
-    index: number,
-    getProjects: boolean,
-    setProjects: (flag: boolean) => void,
-    updateIndex: (index: number) => void,
-    projectsList: { id: number; title: string; date: string; link: string; images: string[]; description: string; short: string; }[],
-}
-
-const Landing = ({
-        index,
-        getProjects,
-        setProjects,
-        updateIndex,
-        projectsList,
-    }: Props) => {
-
-    useEffect(() => {
-        if (getProjects){
-            document.body.style.overflow = "hidden";
-        }else{
-            document.body.style.overflow = "auto";
-        }
-    }, [getProjects])
-
+const Landing = () => {
     return (
         <div>
             <div className="background">
@@ -41,16 +15,21 @@ const Landing = ({
                     <div className="arrow"/>
                     <div className="arrow"/>
                     <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
+                    <div className="arrow"/>
                 </div>
             </div>
-            <div className={(getProjects)?"page-container noScroll":"page-container"}>
+            <div className="page-container">
                 <About />
-                <ProjectsRecent index={index} setProjects={setProjects} updateIndex={updateIndex} projectsList={projectsList}/>
-                <Experience />
+                <ProjectsRecent />
                 <Contact />
             </div>
         </div>
-      );
+    );
 }
 
 export default Landing;

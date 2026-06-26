@@ -4,7 +4,7 @@
     flex-direction: column;
 
     align-items: center;
-    row-gap: 5vh;
+    row-gap: 2vh;
 
     background-color: #000000;
 }
@@ -70,12 +70,10 @@ p{
     position: fixed;
     background-color: #0D0D0D;
 
-    margin-left: 17.5vw;
-    margin-top: -20vh;
+    left: 17.5vw;
+    top: -100vh;
     width: 60vw;
-    height: 120vh;
-
-    align-self: center;
+    height: 300vh;
 
     transform: rotate(-5deg);
 }
@@ -90,15 +88,15 @@ p{
 
 .arrow {
     z-index: 0;
-    width: 0; 
-    height: 0; 
-    padding-bottom: 10vw;
+    width: 0;
+    height: 0;
+    padding-bottom: 10vh;
     margin-left: 3vw;
 
     border-left: 20vw solid transparent;
     border-right: 20vw solid transparent;
-    
-    border-top: 10vw solid #282828;
+
+    border-top: 10vh solid #282828;
 
     animation: TopToBottom 10s infinite linear;
 }
@@ -110,10 +108,10 @@ p{
 
 @keyframes TopToBottom {
     from {
-        transform: translateY(-20vw);
+        transform: translateY(0);
     }
     to {
-        transform: translateY(20vw);
+        transform: translateY(20vh);
     }
 }
 
@@ -143,6 +141,20 @@ p{
     width: 100vw !important;
     justify-content: center;
     align-items: center;
+}
+
+.customNav .nav-link {
+    transition: color 0.2s !important;
+    font-size: 19px;
+}
+
+.customNav .navbar-brand {
+    transition: color 0.2s !important;
+}
+
+.customNav .nav-link:hover,
+.customNav .navbar-brand:hover {
+    color: #E94F37 !important;
 }
 
 .navBarBackground {
@@ -178,8 +190,10 @@ p{
     flex-direction: column;
 
     width: 90vw;
-    min-height: 20vh;
-    margin-top: 10vh;
+    min-height: 90vh;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutHeading {
@@ -188,17 +202,14 @@ p{
 
     max-width: fit-content;
     white-space: nowrap;
-
-    letter-spacing: -0.22em;
+    font-size: 80px;
 }
 
 .aboutWrapper {
     display: flex;
     flex-direction: row;
-    flex: 1;
     align-self: center;
 
-    margin-top: 0vh;
     padding: 0.5vw 0.5vw 0.5vw 0.5vw;
     width: 70%;
 }
@@ -212,11 +223,20 @@ p{
     padding: 3vh 2vw 1vh 2vw;
 
     color: #F6F7EB;
-    background-color: #1B1D1F;
+}
+
+.aboutParagraph p {
+    font-size: 25px;
+}
+
+.aboutHover {
+    color: #E94F37 !important;
+    transition: color 0.2s;
 }
 
 .aboutHover:hover {
     cursor: pointer;
+    color: #F6F7EB !important;
 }
 
 @media (max-width: 1400px) {
@@ -275,7 +295,7 @@ p{
 
     width: 95vw;
     min-height: 70vh;
-    margin-top: 10vh;
+    margin-top: 6vh;
 
     align-items: center;
 }
@@ -572,7 +592,8 @@ p{
 
     width: 95vw;
     min-height: 70vh;
-    margin-top: 10vh;
+    align-items: center;
+    margin-top: 6vh;
 }
 
 .experienceHeading {
@@ -606,6 +627,7 @@ p{
     align-items: center;
 
     width: 70vw;
+    margin-top: 6vh;
 
     padding-bottom: 10vh;
 }
@@ -613,7 +635,6 @@ p{
 .contactBackground .sectionHeading {
     align-self: center;
     color: #F6F7EB;
-    letter-spacing: -0.22em;
 }
 
 .contactBackground .headingBar{
@@ -627,17 +648,28 @@ p{
     display: flex;
     flex-direction: column;
     padding: 3vh 2vw 1vh 2vw;
-    background-color: #1B1D1F;
 }
 
 .contactBody p {
     align-self: center;
     text-align: center;
     color: #F6F7EB;
+    font-size: 25px;
+}
+
+.contactBody .projectPageFooter {
+    border-top: none;
+    padding-top: 1vh;
 }
 
 .contactBody p a {
     color: #E94F37;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contactBody p a:hover {
+    color: #F6F7EB;
 }
 
 .contactImagesContainer {
@@ -650,8 +682,14 @@ p{
 }
 
 .contactLink {
-    color:#E94F37;
+    color: #E94F37;
     font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.contactLink:hover {
+    color: #F6F7EB;
 }
 
 @media (max-width: 500px){

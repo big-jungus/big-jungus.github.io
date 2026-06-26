@@ -1,46 +1,62 @@
 import "./css/stylesHome.css"
+import "./css/experience.css"
 
-import { Button } from "react-bootstrap";
+type Job = {
+    company: string;
+    url: string;
+    role: string;
+    date: string;
+    tools: string;
+    bullets: string[];
+};
 
-function Experience () {
+const jobs: Job[] = [
+    {
+        company: "SAIC",
+        url: "https://www.saic.com",
+        role: "Game Programming Intern",
+        date: "June 2023 - August 2023",
+        tools: "Unreal, Git, Blueprints, C++",
+        bullets: [
+            "Confidential project: a realistic turn-based wargame based on a near-future scenario.",
+            "Focused on developing the multiplayer framework and implementing all UI into Unreal including menus, character selection, and HUD.",
+            "Worked closely with two engineers to incorporate live Matlab generated data into the game.",
+            "Presented to key military personnel, exceeding stakeholder expectations.",
+        ],
+    },
+];
+
+function Experience() {
     return (
         <div className="experienceBackground">
             <div className="anchor" id="experience"/>
             <h1 className="sectionHeading experienceHeading">WORK EXPERIENCE</h1>
 
-            <div className="projectHolder">
-                <div className="projectSection">
-                    <div className="projectHeaderLeft">
-                        <a href="https://www.saic.com" target="_blank">
-                            <h2>SAIC</h2>
-                        </a>
-                        
-                        <div>
-                            <h3>Game Programming Intern</h3>
-                            <h3>June 2023 - August 2023</h3>
-                            <h3>Team: <span className="highlight">5</span></h3>
-                        </div>
+            {jobs.map((job, i) => (
+                <div className="expRow" key={i}>
+                    <div className="expInfo">
+                        <h2
+                            className="expCompany"
+                            onClick={() => window.open(job.url, "_blank")}
+                        >
+                            {job.company}
+                        </h2>
+                        <span className="expRole">{job.role}</span>
+                        <span className="expDate">{job.date}</span>
+                        <span className="expTools">{job.tools}</span>
                     </div>
-                    
-                    <div className="projectDescription">
-                        <Button bsPrefix="buttonLeft" onClick={()=> window.open("https://www.saic.com", "_blank")}>VIEW WEBSITE</Button>
-                        <div className="projectBodyLeft">
-                            <ul>
-                                <p>This was a confidential project, making a realistic turn-based wargame based on a near-future scenario.</p>
-                                <li>Tools: <span className="highlight">Unreal</span>, Git, Blueprints, C++</li>
-                                <li>Focused on <span className="highlight">developing the multiplayer framework</span> and implementing all UI into Unreal including <span className="highlight">menus, character selection, and HUD</span> .</li>
-                                <li>Worked closely with two engineers to incorporate live Matlab generated data into the game.</li>
-                                <li>Presented to key military personnel, <span className="highlight">exceeding stakeholder expectations.</span></li>
-                            </ul>
-                        </div>
-                    </div>
+
+                    <ul className="expBullets">
+                        {job.bullets.map((b, j) => (
+                            <li key={j}>{b}</li>
+                        ))}
+                    </ul>
                 </div>
-            </div>
-
-
+            ))}
 
             <div className="padding"/>
         </div>
     );
 }
+
 export default Experience;

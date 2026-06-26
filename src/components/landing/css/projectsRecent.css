@@ -1,0 +1,99 @@
+.projectRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 2vw;
+    border-top: 1px solid #333;
+    padding: 4vh 0;
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-self: flex-start;
+}
+
+.projectTitle {
+    font-size: 40px;
+    font-family: 'Lexend Zetta', sans-serif;
+    letter-spacing: -4px;
+    color: #F6F7EB;
+    margin: 0;
+    margin-left: -10px;
+    line-height: 1;
+    transition: color 0.2s;
+}
+
+.projectEngine {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: #888;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.projectBlurb {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #bbb;
+    line-height: 1.5;
+    margin: 0.8rem 0 0.8rem 0;
+    max-width: 480px;
+}
+
+.projectTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.projectTag {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #888;
+    border: 1px solid #444;
+    padding: 3px 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.projectThumb {
+    width: 45%;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, opacity 0.2s;
+}
+
+.projectThumb:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.projectTitle.clickable:hover {
+    color: #E94F37;
+}
+
+@media (max-width: 768px) {
+    .projectRow {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projectThumb {
+        width: 100%;
+        height: auto;
+    }
+
+    .projectTitle {
+        font-size: 28px;
+        letter-spacing: -2px;
+    }
+}

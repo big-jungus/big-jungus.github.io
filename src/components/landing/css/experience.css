@@ -1,0 +1,93 @@
+.expRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4vw;
+    width: 80%;
+    border-top: 1px solid #333;
+    padding: 4vh 0;
+}
+
+.expInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 0 0 30%;
+}
+
+.expCompany {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 40px;
+    letter-spacing: -4px;
+    color: #F6F7EB;
+    margin: 0 0 0 -5px;
+    line-height: 1;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.expCompany:hover {
+    color: #E94F37;
+}
+
+.expRole {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: #F6F7EB;
+    text-transform: uppercase;
+}
+
+.expDate {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: #888;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.expTools {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: #888;
+    letter-spacing: 0.04em;
+    margin-top: 0.4rem;
+    text-transform: uppercase;
+}
+
+.expBullets {
+    flex: 1;
+    list-style-type: square;
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.expBullets li {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    color: #F6F7EB;
+    line-height: 1.7;
+    margin-bottom: 0.4vh;
+}
+
+@media (max-width: 768px) {
+    .expRow {
+        flex-direction: column;
+        width: 90%;
+        gap: 2vh;
+    }
+
+    .expInfo {
+        flex: unset;
+        width: 100%;
+    }
+
+    .expCompany {
+        font-size: 24px;
+        letter-spacing: -2px;
+    }
+
+    .expBullets li {
+        font-size: 15px;
+    }
+}

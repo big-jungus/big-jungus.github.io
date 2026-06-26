@@ -1,0 +1,304 @@
+.projectPageContainer {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 6vh 4vw 10vh;
+}
+
+.projectPageContent {
+    width: 100%;
+    max-width: 1500px;
+    color: #F6F7EB;
+}
+
+/* Back link */
+.backLink {
+    display: inline-block;
+    color: #888;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4vh;
+    transition: color 0.2s;
+}
+
+.backLink:hover {
+    color: #E94F37;
+}
+
+/* Title row */
+.projectPageHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    margin-bottom: 1vh;
+}
+
+.projectPageTitle {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 50px;
+    letter-spacing: -5px;
+    color: #F6F7EB;
+    margin: 0;
+    margin-left: -10px;
+    line-height: 1;
+}
+
+/* Meta row */
+.projectPageMeta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 2vh;
+}
+
+.metaDivider {
+    color: #444;
+}
+
+.metaHighlight {
+    color: #E94F37;
+    font-weight: 600;
+}
+
+/* Short description */
+.projectPageShort {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 4vh;
+    border-bottom: 1px solid #222;
+    padding-bottom: 4vh;
+    max-width: 100%;
+}
+
+/* Gallery */
+.projectGalleryLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4vw;
+    margin-bottom: 5vh;
+}
+
+.galleryText {
+    flex: 40;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #888;
+    line-height: 1.6;
+}
+
+.galleryText p {
+    margin: 0 0 1.2em 0;
+}
+
+.galleryImages {
+    flex: 60;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.galleryImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .projectGalleryLayout {
+        flex-direction: column;
+    }
+
+    .galleryText,
+    .galleryImages {
+        flex: unset;
+        width: 100%;
+    }
+}
+
+/* Blocks */
+.projectPageBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectBlock {
+    padding: 5vh 4vw;
+}
+
+.blockEven {
+    background-color: #000000;
+}
+
+.blockOdd {
+    background-color: #0D0D0D;
+}
+
+.blockTitle {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 30px;
+    letter-spacing: -2px;
+    color: #F6F7EB;
+    margin-bottom: 2vh;
+}
+
+/* Subsections */
+.blockSubsections {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.blockSubsection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+}
+
+.blockText {
+    flex: 40;
+    display: flex;
+    flex-direction: column;
+}
+
+.blockDescription {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #F6F7EB;
+    line-height: 1.7;
+    margin: 0 0 1vh 0;
+}
+
+.blockBulletLine {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 1.5rem;
+}
+
+.blockImage {
+    flex: 0 0 25%;
+    max-width: 25%;
+    height: auto;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.projectPagePlayBtn {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 2px solid #E94F37;
+    color: #E94F37;
+    text-decoration: none;
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.projectPagePlayBtn:hover {
+    background-color: #E94F37;
+    color: #F6F7EB;
+}
+
+/* Footer */
+.projectPageFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 5vh 0 2vh;
+    border-top: 1px solid #222;
+    margin-top: 5vh;
+}
+
+.footerLink {
+    font-family: 'Lexend Zetta', sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.08em;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footerLink:hover {
+    color: #E94F37;
+}
+
+.footerDivider {
+    color: #444;
+    font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .projectPageContainer {
+        padding: 4vh 5vw 8vh;
+    }
+
+    .projectPageHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vh;
+    }
+
+    .projectPageTitle {
+        font-size: 32px;
+        letter-spacing: -2px;
+        margin-left: 0;
+    }
+
+    .projectPageShort {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .projectPageMeta {
+        font-size: 14px;
+    }
+
+    .projectBlock {
+        padding: 4vh 5vw;
+    }
+
+    .blockTitle {
+        font-size: 22px;
+        letter-spacing: -1px;
+    }
+
+    .blockSubsection {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .blockText {
+        flex: unset;
+        width: 100%;
+    }
+
+    .blockDescription {
+        font-size: 16px;
+    }
+
+    .blockImage {
+        flex: unset;
+        max-width: 100%;
+        width: 100%;
+    }
+}
