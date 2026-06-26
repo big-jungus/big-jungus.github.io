@@ -23,12 +23,19 @@
         display: none;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-1975c853.js"></script>
-    <link rel="stylesheet" href="/assets/index-875f9379.css">
+    <script type="module" crossorigin src="/assets/index-be56f5d4.js"></script>
+    <link rel="stylesheet" href="/assets/index-21ea7b8b.css">
   </head>
   <body>
-    <div id="root">
-      
-    </div>
+    <script>
+      // Restore path after GitHub Pages 404 redirect
+      var redirect = sessionStorage.getItem('redirect');
+      if (redirect) {
+        sessionStorage.removeItem('redirect');
+        window.history.replaceState(null, '', redirect);
+      }
+    </script>
+    <div id="root"></div>
+    
   </body>
 </html>
