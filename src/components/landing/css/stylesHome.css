@@ -34,14 +34,21 @@
     font-size: 60px;
 }
 
+@media (max-width: 768px) {
+    .sectionHeading {
+        letter-spacing: -3px;
+    }
+}
+
 @media (max-width: 500px){
     .pageBar{
         height: 150vh;
         width: 5px;
     }
-    
-    .sectionHeading{
-        font-size: 35px;
+
+    .sectionHeading {
+        font-size: 28px;
+        letter-spacing: -2px;
     }
 }
 
@@ -167,9 +174,8 @@ p{
     .navbar {
         width: 100%;
         max-height: 6vh;
-    
+
         color: #F6F7EB;
-        font-size: 2vw;
         font-weight: 300;
         background-color: rgba(0, 0, 0, 0.35) !important;
     }
@@ -178,6 +184,10 @@ p{
         font-size: 30px;
         font-weight: 500;
         cursor: pointer;
+    }
+
+    .customNav .nav-link {
+        font-size: 14px;
     }
 }
 
@@ -250,37 +260,40 @@ p{
         flex-direction: column;
         align-items: center;
         margin-top: 3vh;
-        margin-left: 5vw;
     }
 
     .aboutPicture {
         margin-bottom: 1vh;
     }
+}
 
-    .aboutBackground{
-        margin-top: 5vh;
+@media (max-width: 768px) {
+    .aboutHeading {
+        font-size: 52px;
+    }
+
+    .aboutWrapper {
+        width: 95%;
+    }
+
+    .aboutParagraph p {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 500px){
-    .aboutPicture {
-        height: 250px;
-        width: 250px;
-    }
-    .aboutParagraph{
-        font-size: 12px;
-    }
-
-    .aboutBackground{
-        margin-top: 0;
-    }
-
-    .aboutBackground .headingBar{
-        height: 5px;
-    }
-
+@media (max-width: 500px) {
     .aboutHeading {
-        font-size: 30px;
+        font-size: 28px;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .aboutParagraph p {
+        font-size: 15px;
+    }
+
+    .aboutBackground {
+        margin-top: 0;
     }
 }
 
@@ -660,6 +673,13 @@ p{
 .contactBody .projectPageFooter {
     border-top: none;
     padding-top: 1vh;
+    margin-top: 1vh;
+    flex-wrap: wrap;
+}
+
+.contactBody p {
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .contactBody p a {
@@ -692,13 +712,19 @@ p{
     color: #F6F7EB;
 }
 
-@media (max-width: 500px){
-    .contactImagesContainer{
-        margin-left: 10vw;
+@media (max-width: 768px) {
+    .contactBackground {
+        width: 90vw;
     }
 
-    .contactBackground .headingBar{
-        height: 5px;
+    .contactBody p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contactBody p {
+        font-size: 15px;
     }
 }
 

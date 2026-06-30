@@ -95,5 +95,18 @@
     .projectTitle {
         font-size: 28px;
         letter-spacing: -2px;
+        margin-left: 0;
+    }
+
+    .projectHolder {
+        width: 95%;
+    }
+
+    .projectBlurb {
+        max-width: 100%;
+    }
+
+    .projectInfo {
+        width: 100%;
     }
 }
