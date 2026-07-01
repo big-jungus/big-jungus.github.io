@@ -27,6 +27,9 @@ const ProjectPage = () => {
                     <h1 className="projectPageTitle">
                         {project.title}
                     </h1>
+                    {project.images && project.link && (
+                        <a href={project.link} target="_blank" rel="noreferrer" className="projectPagePlayBtn">PLAY NOW</a>
+                    )}
                 </div>
 
                 <div className="projectPageMeta">
